@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Kılıç C.</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
 <style>
 body, html {
   height: 100%;
@@ -30,6 +43,7 @@ body, html {
 }
 
 .middle {
+  width: 60%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,7 +56,7 @@ body, html {
 
 hr {
   margin: 3vh auto 5vh auto;
-  width: 40%;
+  width: 60%;
 }
 
 * {
@@ -52,9 +66,12 @@ hr {
 }
 
 
-.container {
+.container 
+{
   color: white;
   text-align: center;
+  width: 100%;
+  margin: 0;
 }
 
 
@@ -72,8 +89,39 @@ li span {
   font-size: 1.2em;
 }
 
+@media(max-width: 576px)
+
+  {
+    li 
+      {
+        font-size:1.28vh;
+      }
+
+    .middle 
+      {
+        width: 85%;
+      }
+  }
+
+  @media(max-width: 1110px)
+
+  {
+    li 
+      {
+        font-size:0.55em;
+      }
+
+    .middle 
+      {
+        width: 70%;
+      }
+  }
+
 
 </style>
+
+</head>
+
 <body>
 
 <div class="bgimg">

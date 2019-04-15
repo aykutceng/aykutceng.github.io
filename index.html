@@ -91,7 +91,69 @@
 	.icons
 	{
 		width: 8%;
-		margin-bottom: 2vh;
+		margin-bottom: 1vh;
+	}
+
+	.animation
+	{
+		width: 32%;
+	}
+
+	@media(max-width: 576px)
+	{
+
+		.welcome
+			{
+				font-size: 2em;
+			}
+
+		.animation
+			{
+				width: 100%;
+			}
+
+		.tanıtım
+			{
+				width: 68vw;
+			}
+
+		img.github
+			{
+				width: 55%;
+				height: 6.25vh;
+				margin-top: 2vh;
+				margin-bottom: 2.5vh;
+
+			}
+	}
+
+
+	@media(max-width: 992px)
+	{
+
+		.welcome
+			{
+				font-size: 2.5em;
+			}
+
+		.animation
+			{
+				width: 100%;
+			}
+
+		.tanıtım
+			{
+				width: 60%;
+			}
+
+		img.github
+			{
+				width: 65%;
+				height: 10.25vh;
+				margin-top: 2vh;
+				margin-bottom: 2.5vh;
+
+			}
 	}
 
 	.anm
@@ -124,11 +186,11 @@
 
 </head>
 
-<body style="background-color: rgba(55,95,115,1); width: 100%; margin:0; padding: 0; ">
+<body style="background-color: rgba(55,95,115,1); width: 100%; margin: 0; padding: 1vh 0 0 0; ">
 	
 	<div align="center" style="color: white; width: 100%; position: absolute; margin-top:50vh; margin-left: 50vw; transform: translate(-50%,-50%);">
 		
-		<h2>WELCOME TO MY PAGE!</h2>
+		<h2 class="welcome">WELCOME TO MY PAGE!</h2>
 
 		<div class="tanıtım">
   			<img src="ac.jpg" alt="Aykut Cengiz" style="width:100%; border-top-left-radius:20px; border-top-right-radius:20px;  ">
@@ -136,7 +198,7 @@
   			<p class="title">Computer Engineer</br>(Eskişehir,TURKEY)</p>
   			<p style="color:black">Anadolu University</p>
   			<a href="mailto:aykutceng@gmail.com"><p style="color:grey">aykutceng@gmail.com</p></a>
-  			<div style="margin: 24px 0;">
+  			<div style="margin: 24px 0 12px 0">
    	 		<a href="https://www.facebook.com/aykutceng"><i class="fa fa-facebook icons"></i></a> 
     		<a href="https://twitter.com/aykut983"><i class="fa fa-twitter icons"></i></a>  
     		<a href="https://www.instagram.com/aykutceng/"><i class="fa fa-instagram icons"></i></a>  
@@ -145,7 +207,7 @@
 		</div>
 
 		
-		<div id="row" class="animation" style="width: 32%;" >
+	<div id="row" class="animation" >
 		<div class="arrowFade anm"><img class="arrowdown" src="arrowdown.png"></div>
 		<div class="arrowFade"><h4 style="font-variant: small-caps;">Select one of the belows to see my works</h4></div>
 		<div class="arrowFade anm"><img class="arrowdown" src="arrowdown.png"></div>
