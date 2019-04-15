@@ -94,7 +94,7 @@
 
 
 
-<div id="map"></div>
+<div id="map" title="When we get the API Key, the map will be displayed properly"></div>
 <div align="center"><img id="mapIm" class="mapIm" src="mapBüyüt.png" onclick="mapSize()"></div>
 
 
@@ -109,7 +109,7 @@
 
           <img class="ulaşResim" src="adresİcon.png">
 					
-					<p class="adresText">Hoşnudiye Mah. İsmet İnönü-1 Cad. No:41/14
+					<p class="adresText">Yağlıbağ Mah. Orhan Kemal Cad. No:410/124
 					   Tepebaşı-Eskişehir/TÜRKİYE, 47166
 					</p>
 
@@ -125,12 +125,12 @@
 
       <img class="ulaşResim" src="telephone.png">
 
-			<p class="adresText"> <b>Tel:</b> +90 222 222 2 222 </br><b>Fax:</b> +90 222 222 1 222 </p>
+			<p class="adresText"> <b>Tel:</b> +90 123 456 7 890 </br><b>Fax:</b> +90 123 456 0 890 </p>
 			
 
 			<p class="adresText">
-			<a class="ilMail" href="#">arda@iff.tech</a></br>
-			<a class="ilMail" href="#">burak@iff.tech</a>
+			<a class="ilMail" href="#">mail1@example.com</a></br>
+			<a class="ilMail" href="#">mail2@example.com</a>
 		    </p>
 
         <img class="adresIm" src="telResim.jpg">
@@ -180,7 +180,7 @@
 <script>
 var map;
 
-var iff = {lat: 39.778194, lng: 30.515553};
+var iff = {lat: 37.778194, lng: 25.515553};
 
 function CenterControl(controlDiv, map) {
 
@@ -229,7 +229,7 @@ function CenterControl(controlDiv, map) {
           zoom: 16,
           zoomControl: true,
           mapTypeControl: false,
-          streetViewControl: false,
+          streetViewControl: true,
           scaleControl: true,
           streetViewControl: true,
           streetViewControlOptions: {
