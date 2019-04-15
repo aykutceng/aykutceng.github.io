@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="slide.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="600max.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 601px)" href="600min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="768min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 992px)" href="992min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="onload.js"></script> -->
+
+
+</head>
+<body onload="sliding()">
+
+<div id="loading" align="center" class="header">
+
+	<div class="dil">
+		<table style="width: 40px;">
+			<tr>
+				
+				<td><a href="#"><img class="dil" src="en.jpg"></a></td>
+				<td><a href="index.html"><img class="dil" src="tr.jpg"></a></td>
+				
+			</tr>
+			<tr>
+				<td><a class="dil" href="#">EN</a></td>
+				<td><a class="dil" href="index.html">TR</a></td>
+			</tr>
+		</table>
+
+		
+	
+	</div>
+ 
+</div>
+
+<div id="navbar" class="normalPos">
+  <nav  class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#navekle">
+
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+
+        </button>
+        
+     
+    </div>
+    <div class="collapse navbar-collapse" id="navekle">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><div class="dropdown"><button class="dropbtn">Hizmetlerimiz</button>
+            <div class="dropdown-content">
+              <ul>
+              <li><a href="yazılım.htm"><span class="fa fa-caret-right">Yazılım</span></a></li>
+              
+              <li><a href="güvenlik.htm"><span class="fa fa-caret-right">Güvenlik Danışmanlığı</span></a></li>
+              
+              <li><a href="teknoloji.htm"><span class="fa fa-caret-right">Teknoloji Danışmanlığı</span></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li> 
+      <li><a href="iletisim.htm">İletişim</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<div  style="width:100%;" class="container">
+	<div class="row justify-content-center">
+
+<div class="slideshow-container">
+
+
+<div class="mySlides fade ">
+  <div align="center" class="numbertext">1 / 3</div>
+  <div class="bg1"><img  class="slideee " src="business.jpg"><div class="midd"><div id="slaytHover" onmouseover="notSliding()" onmouseout="Sliding()"  class="bg1Text"><h1>Herkesin ihtiyacı aynı olamaz!</h1><p class="textKlasik">Başkalarının ihtiyaçlarına göre hazırlanmış yazılımları kullanarak 
+vizyonunuzdan ödün vermeyin. Yazılımınız size uymalı, siz ona değil.
+
+
+  </p></div></div></div>
+  
+</div>
+
+
+
+<div class="mySlides fade ">
+  <div class="numbertext">2 / 3</div>
+  <div class="bg1"><img class="slideee" src="security.jpg"><div class="midd"><div id="slaytHover" onmouseover="notSliding()" onmouseout="Sliding()" class="bg1Text"><h1>Size En Uygun Teknolojileri Kullanın</h1><p class="textKlasik">Her teknoloji herkese göre değildir. Hiç kullanmadığınız onlarca özelliğe boşu boşuna onbinlerce lira ödemiş olabilirsiniz. IFF Teknoloji'de yapılacak olan özel yazılımlarda sadece sizin ihtiyacınız olanı seçersiniz, böylelikle yazılım masrafınız azalır.
+  </p></div></div></div>
+  
+</div>
+
+
+
+<div class="mySlides fade ">
+  <div class="numbertext">3 / 3</div>
+  <div class="bg1"><img class="slideee " src="fotomakine.jpg"><div class="midd"><div id="slaytHover" onmouseover="notSliding()" onmouseout="Sliding()" class="bg1Text"><h1>Hazır Yazılımlarla İşinizi Karmaşıklaştırmayın</h1><p class="textKlasik">Hazır yazılımları size uygun hale getirmek için yapılacak her güncelleme sizin işinizi daha da yavaşlatır. Bir süre sonra yazılımınız o kadar karmaşık bir hale gelir ki, yazılımla uğraşmaktan işinizi yapamaz hale gelirsiniz. IFF Teknoloji'de yaptıracağınız yazılımlar ileride oluşabilecek ihtiyaçlarınız da düşünülerek tasarlanır. İhtiyacınız olduğunda yazılıma ekleme yapmak bir karmaşaya sebep olmaz.
+  </p></div></div></div>
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div></div>
+
+<br>
+<br>
+
+
+
+
+<div class="container">
+	<div class="row justify-content-center">
+
+		
+
+		<div align="center" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1"><div class="polaroid"><div class="özettCover"><img class="özetCover" src="kupa.jpg"><div class="resimüstü">İŞİNİZİ KOLAYLAŞTIRMAK MI İSTİYORSUNUZ?</div><a href="yazılım.htm"><div class="ulas">Detaylı Bilgi</div></a></div><div class="bilgi"><img class="özet" src="platform.jpg"><div class="özetText"><h1>YAZILIM</h1><p>İhtiyacınız olan platformu siz belirleyin. İstediğiniz platform için en uygun dili biz seçelim ve sizlere sunalım!</p></div></div></div></div>
+
+		
+
+		<div align="center" class="col-xs-10  col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0"><div class="polaroid1"><div class="özettCover"><img class="özetCover" src="kamera.jpg"><div class="resimüstü1">GÜVENLİK AÇIĞINIZ MI VAR?</div><a href="güvenlik.htm"><div class="ulas">Detaylı Bilgi</div></a></div><div class="bilgi"><img class="özet" src="guvenlik.jpg"><div class="özetText"><h1>GÜVENLİK DANIŞMANLIĞI</h1><p>Mevcut uygulamalarınızın, yazılımlarınızın, internet sitelerinizin ..... güvenlik açıklarını bulalım. Sİzin için tam koruma sağlayalım ve bizim güvencemiz altında olun!  </p></div></div></div></div>
+
+		
+		
+
+		<div align="center" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0  col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0"><div class="polaroid"><div class="özettCover"><img class="özetCover" src="özetüstü.jpg"><div class="resimüstü">SİZİN İÇİN HANGİSİ UYGUN KARAR VEREMİYOR MUSUNUZ?</div><a href="teknoloji.htm"><div class="ulas">Detaylı Bilgi</div></a></div><div class="bilgi"><img class="özet" src="danısma.jpg"><div class="özetText"><h1>TEKNOLOJİ DANIŞMANLIĞI</h1><p>Kullanacağınız yazılım ve programlar için en uygun teknoloji cihazların, araç ve gereçlerin belirlenmesi sizi büyük bir masraftan kurtararak tasarruf etmenizi sağlar. Hizmetimizden yararlanarak bir adım önde başlayın!</p></div></div></div></div>
+
+		<div align="center" class="col-xs-1 col-lg-1"></div>
+
+	</div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container calıs">
+	<div class="row justify-content-center">
+		
+		<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="grafik.png"><div class="calısIc">
+			<div class="calısmaKutu">
+				<h3>İhtiyaç Analizi</h3><p class="calısmaText">Birlikte yapacağımız toplantılarla ihtiyaçlarınızı beraber belirliyoruz.</p>
+			</div>
+		</div></div>
+    	
+    	<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="clock.png"><div class="calısIc">
+    		<div class="calısmaKutu">
+    			<h3>Tasarım Süreci</h3><p class="calısmaText">İhtiyaçlarınıza göre sistemi size en uygun şekilde tasarlıyoruz.</p>
+    		</div>
+    	</div></div>
+    	
+    	<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="imple.png"><div class="calısIc">
+    		<div class="calısmaKutu">
+    			<h3>İmplementasyon Süreci</h3><p class="calısmaText">Uzlaştığımız tasarımın implementasyonunu en iyi şekilde yapıyoruz.</p>
+    		</div>
+    	</div></div>
+    	
+    	<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="test.png"><div class="calısIc">
+			<div class="calısmaKutu">
+    			<h3>Test Süreci</h3><p class="calısmaText">Yazılımın test sürecini hem makine hem de insan ile yürütüyoruz.</p>
+    		</div>
+		</div></div>
+    	
+    	<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="delivery.png"><div class="calısIc">
+    		<div class="calısmaKutu">
+    			<h3>Yazılımın Teslimi</h3><p class="calısmaText">Sizin için tasarlanmış ve en iyi şekilde test edilmiş yazılımı size sunuyoruz.</p>
+    		</div>
+		</div></div>
+    	
+    	<div align="center" class="col-xs-6 col-md-6 col-lg-4 calısDıs"><img  class="calısma" src="info.png"><div class="calısIc">
+    		<div class="calısmaKutu">
+    			<h3>Destek Süreci</h3><p class="calısmaText">Yazılım tamamlanmış olsa da sizi yarı yolda bırakmıyoruz.</p>
+    		</div>
+    	</div></div>
+    	
+	</div>
+</div>
+
+<br>
+
+<div id="hiddenarrowdown" class="dropup" >
+
+  <a onclick="openCloseBottom()" ><span  id="uparrow"  class="fa fa-caret-up"></span></a>
+
+<div id="openclose" class="container opclo fadeUp">
+    <div class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div id="enalt" class="container bottom">
+    <div  class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+  
+  
+<!-- <div class="container bottom">
+    <div class="row justify-content-center">
+
+      
+
+      <div class="col-xs-3 col-lg-3" ></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="Facebook.png"></a></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="Instagram.png"></a></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="Twitter.png"></a></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="LinkedIn.png"></a></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="Tumblr.png"></a></div>
+
+      <div align="center" class="col-xs-1 col-lg-1 align-self-center" style="color: gold;"><a href="#"><img class="imgpad" src="iffsmall.gif"></a></div>
+
+      <div class="col-xs-3 col-lg-3" ></div>
+      
+
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="sticky.js" async></script>
+<script type="text/javascript" src="slide.js" async></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('comingsoon.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0,0,0,0.35);
+}
+
+hr {
+  margin: 3vh auto 5vh auto;
+  width: 40%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  color: white;
+  text-align: center;
+}
+
+
+
+li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 1.2em;
+}
+
+
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <img style="width: 20%;" src="brand.png">
+  </div>
+  <div class="middle">
+    <h1 style="margin-top: 2vh;">COMING SOON</h1>
+    <hr>
+
+
+    <div class="container">
+      <ul>
+        <li><span id="days"></span>days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="bottomleft">
+    <a href="index.html"><img style="width:15%;" src="arrowleft.png"></a>
+  </div>
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+  
+
+  const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Jun 1, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+    }, second)
+
+
+</script>
+
+</html>

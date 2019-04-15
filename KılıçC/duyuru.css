@@ -1,0 +1,48 @@
+.div1 {
+    
+     
+    border : 1px solid red;
+    word-wrap:break-word;
+    width:100%;
+    height:450px;
+    padding:0 0 0 0 ;
+    text-decoration: none;
+   
+    }
+
+
+
+
+
+
+.div2{
+
+font-size:145%;
+
+}
+
+
+
+
+ul.duyuru {
+    left: 0 px;
+    list-style-type: none;
+    font-size      : 80%;
+    font-style     : italic;
+}
+
+li.duyuru1 {
+
+margin: 15% 20% 15% 0% ;
+
+}
+
+
+.duyuru2 {
+
+
+
+
+}
+
+

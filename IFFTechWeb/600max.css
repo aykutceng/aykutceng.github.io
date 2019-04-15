@@ -1,0 +1,304 @@
+@media (max-width: 600px)
+{
+
+
+	.navbar-nav
+	{
+		margin:0;
+		
+	}
+
+	.container-fluid
+
+	{
+			padding:0;
+			margin: 0;	
+	}
+
+	.navbar-collapse
+
+	{
+		padding:0;
+	}
+
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    width: 80vw;
+}
+	.nav.navbar-nav.navbar-right li
+	{
+		width:100%;
+	}
+
+
+ .navbar-nav > li
+
+ 	{		margin:0;
+ 			width:80vw;
+  			border-bottom:0.1px solid grey;	
+  			padding:7% 0 3% 0;
+  	}
+
+  	
+
+  .navbar-nav > li:last-child
+
+  	{		margin:0;
+  			width:80vw;
+  			border-bottom:none;
+  			padding:3% 0 7% 0;
+  	}
+
+
+	.navbar-nav > li > a 
+	{
+	
+    
+    width: 100%;
+    font-size: 0.9em;
+    margin:0px;
+    
+    
+	}
+  .navbar-nav > li > div 
+  {
+    
+    
+    width: 100%;
+    font-size: 0.9em;
+    margin:0px;
+    
+
+  }
+
+
+  .nav.navbar-nav.navbar-right li  div button
+{
+	text-align:center;
+	text-shadow:4px 4px 20px;
+	font-family:"Times New Roman";
+	font-weight:600;
+	transition:0.20s;
+    padding-left: 0;
+    margin-left: 15px;
+	
+	
+}
+
+  
+
+
+	.dropdown-content ul
+{
+	list-style-type: none;
+	text-align: left;
+	padding:0px;
+
+}
+
+  ul.nav.navbar-nav.navbar-right
+  	{	
+  			height: 100vh;
+  			width:100%;
+  			background: rgba(0,0,0,0.9);
+  	}
+
+  ul.nav.navbar-nav.navbar-right > li
+  	{
+  			
+  			
+  			
+  			text-align: left;
+  			
+  	}
+
+  
+
+
+  
+
+  /*.nav.navbar-nav.navbar-right li:hover div .dropdown-content 
+  {
+	display:inline-block;
+	position: relative;
+	text-align: left;
+	font-size: 1em;
+	width:100%;
+
+  }*/
+
+
+   .nav.navbar-nav.navbar-right li div .dropdown-content ul li
+  {
+  	text-align: left;
+  	width:100%;
+  	padding:5% 0 5% 10%;
+  	border-top:0.5px solid grey;
+  	margin-top: 0;	
+  	
+
+  }
+
+  .nav.navbar-nav.navbar-right li div .dropdown-content ul li:first-child
+  {
+  	text-align: left;
+  	width:100%;
+  	padding:5% 0 5% 10%;
+  	border-top:0.5px solid grey;
+  	margin-top: 10%;	
+  	
+
+  }
+
+   .nav.navbar-nav.navbar-right li div .dropdown-content ul li:last-child
+  {
+  	text-align: left;
+  	width:100%;
+  	padding:5% 0 3% 10%;
+  	border-top:0.5px solid grey;
+  	margin-top: 0;	
+  	
+
+  }
+
+  
+
+  
+
+
+	.nav.navbar-nav.navbar-right li  a , li a
+	{
+	text-align:left;
+	text-decoration: none;
+	text-shadow:4px 4px 20px;
+	font-family:"Times New Roman";
+	font-weight:600;
+	transition:0.20s;
+	font-size:0.95em;
+	color:grey;
+
+	
+	}
+
+
+
+
+	.imgpad
+	{
+		margin: 1% 0% 4% 0%;
+		padding:0% 0% 0% 0%;
+		opacity:0.5;
+		width:15px;
+		height: auto;
+		transition: 0.20s;
+	}
+
+	.col-xs-6.col-lg-4.align-self-center a img.imgpad:hover
+	{
+		opacity:1;
+		
+		transform: scale(1.2,1.2);
+		transition: 0.20s;
+	}
+
+	p.bottomMedia
+	{	
+		margin:0;
+		padding:0;
+		color:grey;
+		text-align: center;
+		font-size: 0.7em;
+	}
+	p.bottomMedia:before
+	{	
+		content:"Follow us";
+	}
+
+	.col-xs-1{padding:0px;width:8.33%;}
+	.col-xs-2{padding:0px;width:16.66%;}
+	.col-xs-3{padding:0px;width:25%;}
+	.col-xs-4{padding:0px;width:33.33%;}
+	.col-xs-5{padding:0px;width:41.66%;}
+	.col-xs-6{padding:0px;width:50%;}
+	.col-xs-7{padding:0px;width:58.33%;}
+	.col-xs-8{padding:0px;width:66.66%;}
+	.col-xs-9{padding:0px;width:75%;}
+	.col-xs-10{padding:0px;width:83.33%;}
+	.col-xs-11{padding:0px;width:91.66%;}
+	.col-xs-12{padding:0px;width:100%;}
+
+
+	.header 
+	{
+  		border: 0;
+ 
+  		background-color:black;
+ 		background-image: url('iff.gif'),url('baloncuk.png'),url('moon.png');
+  		background-size:25% auto,30% auto,30% auto;
+  		background-repeat: no-repeat,no-repeat,no-repeat;
+ 		background-position: center,left,right;
+ 		width:100%;
+ 		height:20vh;
+ 		top:0;
+ 		margin: 0;
+  		padding: 0;
+  
+	}
+
+	
+	
+
+	.polaroid1
+{
+  
+  width: 100%;
+  
+}
+
+div.özetText
+{
+  
+  font-size:0.8em;
+  
+}
+
+div.özetText h1
+
+{
+	font-size:2em;
+	
+}
+
+
+span.yazılımTextBox1, span.yazılımTextBox2, span.yazılımTextBox3
+{
+	width: 100%;
+}
+
+	span.yazılımTextBox2, span.yazılımTextBox3
+  {
+    left: 0%;
+  }
+
+  .yazılımTextBox2::after , .yazılımTextBox3::after
+  {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 13%;
+    right: 87%;
+    margin-left: -5px;
+    border:12px solid;
+
+    border-color:  transparent transparent rgba(0,0,0,0.4) transparent;
+  }
+
+
+  
+
+}
+
+
+
+

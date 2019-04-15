@@ -1,0 +1,258 @@
+@media (min-width: 768px) 
+{
+  .navbar-nav > li > a 
+  {
+    
+    margin-bottom:0px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left:0px
+  }
+  .navbar-nav > li > div 
+  {
+    margin-bottom:0px;
+    padding-top: 17px;
+    padding-left:0px;
+    padding-bottom: 17px;
+    
+    
+    font-size:0.9em;
+  }
+
+  .nav.navbar-nav.navbar-right li div .dropdown-content 
+  {
+	display:none;
+	font-size:1em;
+	color:grey;
+	text-decoration: none;
+	text-align: left;
+
+
+  }
+
+   .nav.navbar-nav.navbar-right li div .dropdown-content ul li
+  {
+  	text-align: left;
+  	height: 7vh;
+  	padding-top:1vh;
+  	margin-bottom:1px;
+  	padding-left: 3px;
+  	width:140%;
+  	background: rgba(0,0,0,0.7);
+  	transition: 0.2s;
+
+  }
+
+  .nav.navbar-nav.navbar-right li div .dropdown-content ul li:last-child
+  {
+  	
+  	height: 7vh;
+  	padding-top:1vh;
+  	border-bottom:none;
+  	width:14S0%;
+  	background: rgba(0,0,0,0.7);
+
+
+  }
+
+
+  .nav.navbar-nav.navbar-right li:hover div .dropdown-content
+  {
+	display:inline-block;
+	position: relative;
+	padding-left: 0;
+	margin-left:0;
+	width:16vw;
+	padding-top: 2vh;
+  left:-3vw;
+	z-index: 1001;
+  }
+
+
+
+  .dropdown-content li:hover
+  {
+  	transform:translate(10px,0px);
+  	transition: 0.2s;
+  }
+
+
+
+
+
+	.nav.navbar-nav.navbar-right li  a , li a
+	{
+	text-align:center;
+	text-decoration: none;
+	text-shadow:4px 4px 20px;
+	font-family:"Times New Roman";
+	font-weight:600;
+	transition:0.20s;
+	font-size:0.9em;
+	color:grey;
+	
+	}
+
+	
+
+
+
+	.imgpad
+	{
+		margin: 2% 1% 5% 1%;
+		padding:0% 0% 0% 0%;
+		opacity:0.5;
+		width:40px;
+		height: auto;
+		transition: 0.20s;
+	}
+
+	.col-xs-6.col-lg-4.align-self-center a img.imgpad:hover
+	{
+		opacity:1;
+		
+		transform: scale(1.2,1.2);
+		transition: 0.20s;
+	}
+
+	p.bottomMedia
+	{	
+		margin:0;
+		padding:0;
+		color:grey;
+		text-align: center;
+		font-size: 0.95em;
+	}
+	p.bottomMedia:before
+	{	
+		content:"Follow us";
+	}
+
+	.col-md-1{width:8.33%;}
+	.col-md-2{padding:0px;width:16.66%;}
+	.col-md-3{padding:0px;width:25%;}
+	.col-md-4{padding:0px;width:33.33%;}
+	.col-md-5{padding:0px;width:41.66%;}
+	.col-md-6{padding:0px;width:50%;}
+	.col-md-7{padding:0px;width:58.33%;}
+	.col-md-8{padding:0px;width:66.66%;}
+	.col-md-9{padding:0px;width:75%;}
+	.col-md-10{padding:0px;width:83.33%;}
+	.col-md-11{padding:0px;width:91.66%;}
+	.col-md-12{padding:0px;width:100%;}
+
+
+
+	.header 
+	{
+  		border: 0;
+ 
+  		background-color:black;
+ 		background-image: url('iff.gif'),url('baloncuk.png'),url('moon.png');
+  		background-size:21% auto,50% auto,40% auto;
+  		background-repeat: no-repeat,no-repeat,no-repeat;
+ 		background-position: center,left,right;
+ 		width:100%;
+ 		height:20vh;
+ 		top:0;
+ 		margin: 0;
+  		padding: 0;
+  
+	}
+
+
+	
+
+
+.polaroid1, .polaroid1 div.bilgi
+{
+  
+  width: 75%;
+  
+}
+
+	div.özetText
+{
+  
+  font-size:1em;
+  
+}
+
+div.özetText h1
+
+{
+	font-size:2.5em;
+	
+}
+
+
+
+div.özetText h1
+{
+	font-size: 1.5em;
+} 
+
+
+
+
+
+.resimüstü1
+
+{
+  width:67.5%;
+  
+  background: rgba(0,0,0,0);
+  text-align: center;
+  padding:15% 0;
+  font-size:1.25em;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition:0.6s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+
+
+div.polaroid1:hover div.resimüstü1
+
+{
+    
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding:15% 0;
+  
+  color:white;
+  position:absolute;
+  transition:0.6s;
+
+    opacity:1;
+    
+
+
+}
+
+.polaroid1 div.ulas
+
+{
+   position: absolute;
+    top: 75vh;
+    left: 24%;
+   
+  color:red;
+  padding-top:2.5vh;
+  width:52%;
+  height: 10vh;
+  border:1px solid red;
+  border-radius: 5px;
+  background:rgba(0,0,0,0.7);
+  font-size:1.5em;
+  opacity:0;
+  z-index: 150;
+  transition:0.6s;
+
+}
+
+}

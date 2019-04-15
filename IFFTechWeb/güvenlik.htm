@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="slide.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="600max.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 600px)" href="600min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="768min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 992px)" href="992min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="onload.js"></script> -->
+
+
+   
+
+</head>
+<body onload="sliding()">
+
+
+
+<div id="loading" align="center" class="header">
+
+  <div class="dil">
+    <table style="width: 40px;">
+      <tr>
+        
+        <td><a href="#"><img class="dil" src="en.jpg"></a></td>
+        <td><a href="index.html"><img class="dil" src="tr.jpg"></a></td>
+        
+      </tr>
+      <tr>
+        <td><a class="dil" href="#">EN</a></td>
+        <td><a class="dil" href="index.html">TR</a></td>
+      </tr>
+    </table>
+
+    
+  
+  </div>
+ 
+ 
+</div>
+
+<div id="navbar" class="normalPos">
+  <nav  class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#navekle">
+
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+
+        </button>
+        
+     
+    </div>
+    <div class="collapse navbar-collapse" id="navekle">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><div class="dropdown"><button class="dropbtn">Hizmetlerimiz</button>
+            <div class="dropdown-content">
+              <ul>
+              <li><a href="yazılım.htm"><span class="fa fa-caret-right">Yazılım</span></a></li>
+              
+              <li><a href="güvenlik.htm"><span class="fa fa-caret-right">Güvenlik Danışmanlığı</span></a></li>
+              
+              <li><a href="teknoloji.htm"><span class="fa fa-caret-right">Teknoloji Danışmanlığı</span></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li> 
+      <li><a href="iletisim.htm">İletişim</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div  style="width:100%;" class="container">
+  <div class="row justify-content-center">
+
+      <div class="col-xs-10 col-xs-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <h1 class="yazılımBaslık">GÜVENLİK DANIŞMANLIĞI</h1>
+        <p class="yazılımText">Bilgisayar, mobil ve web uygulamarınızın güvenliğininden emin değil misiniz ya da yeterli olmadığını mı düşünüyorsunuz? Bu gibi durumlarda kendi başınıza uğraşmak yerine bize ulaşın. Güvenliğinizi test edelim ve sizin için en uygun seçeneği belirleyelim.</p>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="divGuv">
+        <h2 style="cursor:pointer;" class="güvenlikBaslık" onclick="getElementById('guv1').style.display = '' ">Network(Ağ) Güvenlik Testi:</h2>
+        <div id="guv1" class="guv rowGüv"><span  style="cursor:pointer; z-index:150; " onclick="this.parentElement.style.display='none'" class="closeGuv">&times;</span>
+
+
+          <div class="bölGüv"><img class="guv1" style="float:left; min-width: 200px " src="network.jpg"></div>
+          
+
+          
+          <div class="bölGüv"><ul class="ulGuv">
+          
+           <li class="liGuv">Paket Analizi</li>
+           <li class="liGuv">Güvenlik Duvarı Kuralları</li>
+           <li class="liGuv">DNS, SSH veya Diğer Protokollerin Tünellenmesi</li>
+           <li class="liGuv">Dos veya DDos Saldırılarını Ağ Cihazları Üzerinde Testi</li>
+           <li class="liGuv">Ağ Trafiğinin İzlenmesi</li>
+           <li class="liGuv">Kablosuz Ağ Güvenliği</li>
+           <li class="liGuv">İç ve Dış Ağ Güvenliği</li>
+          </ul></div>
+        
+        <div class="bölGüv1"><p class="guvenlikText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum nec velit et scelerisque. Integer lorem dui, faucibus non ultricies tempus, porta vitae dolor. Quisque tristique at dui ut accumsan. Ut eu luctus ante, sed mollis quam. Nullam feugiat facilisis enim ac luctus. Nulla faucibus ante sed fringilla tristique. Proin sed dictum enim, a consequat enim. Etiam condimentum efficitur ligula a tristique. Vivamus maximus posuere consequat. Nulla ac rutrum metus, id consectetur lectus.</p></div>
+        
+
+            
+          
+
+        </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" >
+        <div class="divGuv" >
+        <h2 style="cursor:pointer" class="güvenlikBaslık" onclick="getElementById('guv2').style.display = '' " >Web Uygulamarı Güvenlik Testi:</h2>
+        <div id="guv2" class="guv rowGüv"><span  style="cursor:pointer; z-index:150; " onclick="this.parentElement.style.display='none'" class="closeGuv">&times;</span><div class="bölGüv"><p class="guvenlikText">Aliquam ut maximus ex. Proin quis velit et turpis tristique fringilla eu ac tortor. Quisque vestibulum orci id purus iaculis pulvinar. Nam congue arcu a mauris vulputate, sed placerat lectus vehicula. Integer ligula nulla, mollis bibendum aliquet in, pharetra id tortor. Suspendisse sit amet metus mauris. Donec sit amet libero urna. Suspendisse id lectus in turpis scelerisque iaculis at eget lectus. Integer rutrum volutpat eros vitae gravida. Integer scelerisque ipsum risus, id ultrices arcu tincidunt vel. Duis dui enim, fringilla nec magna vel, pharetra maximus est. Ut fringilla augue libero, quis condimentum justo fermentum sit amet. Vivamus aliquam tortor ut sem vestibulum, quis interdum massa facilisis</p></div><div class="bölGüv"><img class="guv"  style=" min-width: 175px;" src="web.jpg"></div></div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="divGuv">
+        <h2 style="cursor:pointer" class="güvenlikBaslık" onclick="getElementById('guv3').style.display = '' ">Mobil Uygulamaları Güvenlik Testi:</h2>
+        <div id="guv3" class="guv rowGüv"><span  style="cursor:pointer; z-index:150; " onclick="this.parentElement.style.display='none'" class="closeGuv">&times;</span><div class="bölGüv"><p class="guvenlikText">Curabitur gravida mollis augue et vehicula. Etiam lacinia ullamcorper aliquet. Fusce faucibus ipsum sem, et faucibus odio eleifend ut. Phasellus tempor ultrices iaculis. Donec id lectus tortor. Etiam hendrerit varius sollicitudin. Nullam ultricies ornare nisi porttitor maximus. Pellentesque pulvinar mi quis sem dictum porta. Duis nec ante vitae turpis ullamcorper sollicitudin. Sed varius nunc non magna maximus, vel ultrices arcu viverra. Nulla tincidunt ullamcorper massa, et egestas turpis consectetur ut. Nunc nisi neque, congue quis ullamcorper a, porta sit amet turpis. Cras ornare tellus vel nunc scelerisque, in commodo lacus elementum.</p></div><div class="bölGüv"><img class="guv" style="min-width: 175px" src="mobil.jpg"></div></div>
+        </div>
+
+      </div>
+
+  </div>
+</div>
+
+
+<br>
+
+<div id="hiddenarrowdown" class="dropup" >
+
+  <a onclick="openCloseBottom()" ><span  id="uparrow"  class="fa fa-caret-up"></span></a>
+
+<div id="openclose" class="container opclo fadeUp">
+    <div class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div id="enalt" class="container bottom">
+    <div  class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+ 
+
+
+    
+
+<script type="text/javascript" src="sticky.js" async></script>
+<script type="text/javascript" src="slide.js" async></script>
+
+
+</html>

@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="slide.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="600max.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 600px)" href="600min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="768min.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 992px)" href="992min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="onload.js"></script> -->
+
+
+  
+
+
+
+
+
+
+</head>
+<body onload="sliding()">
+
+
+
+<div id="loading" align="center" class="header">
+
+  <div class="dil">
+    <table style="width: 40px;">
+      <tr>
+        
+        <td><a href="#"><img class="dil" src="en.jpg"></a></td>
+        <td><a href="index.html"><img class="dil" src="tr.jpg"></a></td>
+        
+      </tr>
+      <tr>
+        <td><a class="dil" href="#">EN</a></td>
+        <td><a class="dil" href="index.html">TR</a></td>
+      </tr>
+    </table>
+
+    
+  
+  </div>
+ 
+ 
+</div>
+
+<div id="navbar" class="normalPos">
+  <nav  class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#navekle">
+
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+
+        </button>
+        
+     
+    </div>
+    <div class="collapse navbar-collapse" id="navekle">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><div class="dropdown"><button class="dropbtn">Hizmetlerimiz</button>
+            <div class="dropdown-content">
+              <ul>
+              <li><a href="yazılım.htm"><span class="fa fa-caret-right">Yazılım</span></a></li>
+              
+              <li><a href="güvenlik.htm"><span class="fa fa-caret-right">Güvenlik Danışmanlığı</span></a></li>
+              
+              <li><a href="teknoloji.htm"><span class="fa fa-caret-right">Teknoloji Danışmanlığı</span></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li> 
+      <li><a href="iletisim.htm">İletişim</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+
+<div id="map"></div>
+<div align="center"><img id="mapIm" class="mapIm" src="mapBüyüt.png" onclick="mapSize()"></div>
+
+
+
+<div class="container" style="width: 100%">
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-offset-3 adres">
+			     
+          
+					<h3 class="adresBaslık">Adres</h3>
+
+          <img class="ulaşResim" src="adresİcon.png">
+					
+					<p class="adresText">Hoşnudiye Mah. İsmet İnönü-1 Cad. No:41/14
+					   Tepebaşı-Eskişehir/TÜRKİYE, 47166
+					</p>
+
+          <img class="adresIm" src="adresResim.jpg">
+
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-6  col-lg-3 adres">
+
+
+
+			<h3 class="adresBaslık">Bize Ulaşın</h3>
+
+      <img class="ulaşResim" src="telephone.png">
+
+			<p class="adresText"> <b>Tel:</b> +90 222 222 2 222 </br><b>Fax:</b> +90 222 222 1 222 </p>
+			
+
+			<p class="adresText">
+			<a class="ilMail" href="#">arda@iff.tech</a></br>
+			<a class="ilMail" href="#">burak@iff.tech</a>
+		    </p>
+
+        <img class="adresIm" src="telResim.jpg">
+			
+			
+			
+		</div>
+
+		<div class="col-xs-12 col-md-12 col-lg-6 col-lg-offset-3 ilForm"><h3 class="iletişim">İletişim Formu</h3></div>
+
+		<div class="col-xs-12 col-md-12 col-lg-6 col-lg-offset-3 ">
+			<form class="formluk" action="/action_page.php">
+				
+				<label for="isim">İsim:</label>
+				<input type="text" id="isim" name="isim" placeholder="İsim Soyisim..">
+
+				<label for="şirket">Şirket:</label>
+				<input type="text" id="şirket" name="şirket" placeholder="Şirketinizin tam ismini giriniz..">
+
+				<label for="mail">Mail Adresi:</label>
+				<input type="email" id="mail" name="mail" placeholder="Mail adresinizi giriniz..">
+
+				<label for="telefon">Telefon No:</label>
+				<input type="text" id="telefon" name="telefon"  placeholder="0 (222) 222 2 222">
+
+				<label for="konu">Konu:</label>
+				<textarea id="konu" name="konu" placeholder="İhtiyacınızdan bahsedin.."style="height: 15vh;"></textarea>
+
+				<div align="center">
+
+        <input type="submit" value="Gönder">
+				<input type="reset" value="Sıfırla" title="Formu temizler">
+				
+				</div>
+
+
+
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script>
+var map;
+
+var iff = {lat: 39.778194, lng: 30.515553};
+
+function CenterControl(controlDiv, map) {
+
+        // Set CSS for the control border.
+        var controlUI = document.createElement('div');
+        controlUI.style.backgroundColor = '#fff';
+        controlUI.style.border = '2px solid #fff';
+        controlUI.style.borderRadius = '2px';
+        controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+        controlUI.style.cursor = 'pointer';
+        controlUI.style.margin = '1vh 1vw';
+        controlUI.style.textAlign = 'center';
+        controlUI.title = 'IFF Tech Konumu için Tıklayınız';
+        controlDiv.appendChild(controlUI);
+
+        // Set CSS for the control interior.
+        var controlText = document.createElement('div');
+        controlText.style.color = 'rgb(25,25,25)';
+        controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+        controlText.style.fontSize = '1em';
+        controlText.style.height = '5vh';
+        controlText.style.width = '5vh';
+        controlText.style.paddingLeft = '0px';
+        controlText.style.paddingRight = '0px';
+        controlText.style.content = 'url(grikonum.png)';
+        controlUI.appendChild(controlText);
+
+        // Setup the click event listeners: simply set the map to Chicago.
+        controlUI.addEventListener('click', function() {
+          map.setCenter(iff);
+          map.setZoom(16);
+          
+        });
+
+        controlUI.addEventListener('mouseover',function(){controlText.style.content = 'url(mavikonum.png)';});
+        controlUI.addEventListener('mouseout',function(){controlText.style.content = 'url(grikonum.png)';});
+
+      }
+      function initMap() {
+
+
+      	
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: iff,
+          zoom: 16,
+          zoomControl: true,
+          mapTypeControl: false,
+          streetViewControl: false,
+          scaleControl: true,
+          streetViewControl: true,
+          streetViewControlOptions: {
+          position: google.maps.ControlPosition.LEFT_CENTER
+          },
+
+          styles:
+          [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#746855"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#263c3f"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#6b9a76"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#38414e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#212a37"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9ca5b3"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#746855"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#1f2835"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#f3d19c"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#2f3948"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#17263c"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#515c6d"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#17263c"
+      }
+    ]
+  }
+]
+
+
+        });
+
+         var centerControlDiv = document.createElement('div');
+        var centerControl = new CenterControl(centerControlDiv, map);
+
+        centerControlDiv.index = 1;
+
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(centerControlDiv);
+
+    
+
+        var image = 'iffsmall.gif';
+        var contentString = "Naberrrrrr";
+
+        
+
+        var marker = new google.maps.Marker({
+    position: iff,
+    map: map,
+    icon: image,
+    draggable:true,
+    animation: google.maps.Animation.DROP,
+    title:"IFF Tech!"
+
+});
+
+         var infowindow = new google.maps.InfoWindow({
+    		content: contentString
+ 		 });
+
+
+
+
+marker.addListener('click', function() {
+    infowindow.open(map, marker);
+
+    
+
+    if(marker.getAnimation() !== null)
+    {
+    	marker.setAnimation(null);
+    }
+
+    else
+    {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  });
+
+
+
+
+}
+
+
+      
+
+
+
+function mapSize()
+
+{
+
+		if(document.getElementById('map').style.height != '')
+		{
+				document.getElementById("map").style.height = '';
+				document.getElementById("map").style.transition = '1.5s';
+				document.getElementById("mapIm").src = "mapBüyüt.png";
+		}
+
+		else
+		{
+				document.getElementById("map").style.height = '80vh';
+				document.getElementById("map").style.transition = '1.5s';
+				document.getElementById("mapIm").src = "küçültMap.png";
+		}
+
+}
+
+
+      
+
+      
+
+
+      
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkIQ2W0lXHVPPFDbOmJiOe5SFP9n5zN84&callback=initMap" async defer></script>
+
+
+
+
+
+
+
+<br>
+
+<div id="hiddenarrowdown" class="dropup">
+
+  <a onclick="openCloseBottom()" ><span  id="uparrow"  class="fa fa-caret-up"></span></a>
+
+<div id="openclose" class="container opclo fadeUp">
+    <div class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div id="enalt" class="container bottom">
+    <div  class="row justify-content-center">
+
+
+      <div class="col-xs-12 col-lg-12"><p class="bottomMedia"></p></div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+
+      <div align="center" class="col-xs-6 col-lg-4 align-self-center">
+      	<a href="#"><img class="imgpad" src="Facebook.png"></a>
+      	<a href="#"><img class="imgpad" src="Instagram.png"></a>
+      	<a href="#"><img class="imgpad" src="Twitter.png"></a>
+      	<a href="#"><img class="imgpad" src="LinkedIn.png"></a>
+      	<a href=""><img class="imgpad" src="Tumblr.png"></a>
+      </div>
+
+      <div class="col-xs-3 col-lg-4" ></div>
+      
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="sticky.js" async></script>
+<script type="text/javascript" src="slide.js" async></script>
+
+
+</html>
