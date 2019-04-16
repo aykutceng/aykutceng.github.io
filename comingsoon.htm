@@ -118,6 +118,122 @@ li span {
   }
 
 
+  .demoVersion
+  	{
+  		position: absolute;
+  		top: 2%;
+  		right: 2%;
+  		font-size:1.15em;
+  		font-variant: small-caps;
+  	}
+
+  	.demoVersion > a
+  		{
+  			text-decoration: none;
+  			color: white
+
+  		}
+
+  	.demoVersion > a:hover
+  		{
+  			text-decoration: none;
+  			color: rgba(255, 65, 54,1);
+  			
+
+  		}
+	
+
+
+@media(max-width: 400px)
+	{
+		.demoVersion
+			{
+				font-size: 0.5em;
+			}
+	}
+
+@media(min-width: 401px) and (max-width: 800px)
+	{
+		.demoVersion
+			{
+				font-size: 0.58em;
+			}
+	}
+
+@media(min-width: 801px) and (max-width: 1000px)
+	{
+		.demoVersion
+			{
+				font-size: 1.17em;
+			}
+	}
+
+@media(min-width: 1001px)
+	{
+		.demoVersion
+			{
+				font-size: 1.25em;
+			}
+	}	
+
+
+	.demoVer
+		{
+			position: absolute;
+			top: 2%;
+			left: 50%;
+			width: 8%;
+			display: none;
+			
+		}
+
+	div.demoVersion:hover + img.demoVer 
+	
+		{
+			display: block;
+			animation: swim 3s; 
+			animation-iteration-count: infinite;
+		}	
+
+	@keyframes swim
+	{
+		0% {left:50%}
+		3% {left:52%}
+		6% {left:54%}
+		9% {left:56%}
+		12% {left:58%}
+		15% {left:60%}
+		18% {left:62%}
+		21% {left:64%}
+		24% {left:66%}
+		27% {left:68%}
+		30% {left:70%}
+		33% {left:69%}
+		36% {left:68%}
+		39% {left:67%}
+		42% {left:68%}
+		45% {left:69%}
+		48% {left:70%}
+		51% {left:69%}
+		54% {left:68%}
+		57% {left:67%}
+		60% {left:68%}
+		63% {left:69%}
+		66% {left:70%}
+		69% {left:69%}
+		72% {left:68%}
+		75% {left:67%}
+		78% {left:68%}
+		81% {left:69%}
+		84% {left:70%}
+		87% {left:66%}
+		90% {left:62%}
+		93% {left:58%}
+		96% {left:54%}
+		99% {left:50%}
+	}
+
+
 </style>
 
 </head>
@@ -128,14 +244,24 @@ li span {
   <div class="topleft">
     <img style="width: 20%;" src="brand.png">
   </div>
+
+
+
+  <div align="center" class="demoVersion">
+  		<a href="KılıçCSecond/index.html">Click to See</br>Demo Version</a>
+  </div>
+
+  <img class="demoVer" src="demoVer.png">
+
+
+
+
   <div class="middle">
     <h1 style="margin-top: 2vh;">COMING SOON</h1>
     <hr>
-
-
     <div class="container">
       <ul>
-        <li><span id="days"></span>days</li>
+        <li><span id="days"></span>Days</li>
         <li><span id="hours"></span>Hours</li>
         <li><span id="minutes"></span>Minutes</li>
         <li><span id="seconds"></span>Seconds</li>

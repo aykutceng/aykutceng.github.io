@@ -1,0 +1,1323 @@
+
+body 
+{
+	margin: 0;
+	padding: 0;
+
+	/*background-color: rgba(0,0,0,0.7);*/
+	background-image: url("background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-color: rgba(0,0,0,0.7);
+
+	
+}
+
+div.background2
+{
+	background-color: rgba(0,0,0,0.7);
+	min-height: 90vh;
+	width: 100%;
+}
+
+/*SCROLLBar*/
+
+	::-webkit-scrollbar {
+  width: 14px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px #BFA8A8; 
+  border-radius: 1px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #6C5454; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #493131; 
+}
+
+/*SCROLLBar Ends*/
+
+
+table.langChoice
+
+	{
+		position: absolute;
+		width: 2.5vw; 
+		top: 10vh; 
+		transform: translate(-50%,0);
+		right: 0; 
+		z-index: 10000;
+		margin: 0;
+		padding:0;
+
+	}
+
+div.homeTanıtım
+{
+	width: 100%;
+	height: 90vh;
+	
+	margin: 0;
+	padding: 0;
+}
+
+
+#slideshow {
+  overflow: hidden;
+  height: 90vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 500vw;
+  -webkit-animation: slide 30s linear infinite;
+}
+
+.slide {
+  float: left;
+  height: 90vh;
+  width: 100vw;
+}
+
+.tanıtımiç
+{
+	background: rgba(0,0,0,0.75);
+	height: 90vh;
+	width: 100%;
+}
+
+.tanıtımiçText
+{
+	position: relative; 
+	top: 50vh;
+	left: 50vw;
+	width: 60%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.tanıtımText 
+{
+	position: absolute;
+	bottom: 0;
+	padding:5vw;
+	color:white;
+	font-size: 1.2em;
+	background:rgba(0,0,0,0.5);
+	width: 100vw;
+	text-align: center;
+}
+
+.buttonTanıtım {
+  background-color: rgb(15,150,55); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 21px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-variant:small-caps;
+  transition: 0.1s;
+}
+
+.buttonTanıtım:hover 
+{
+	background-color: rgb(15,100,55);
+	transform: translate(0px,1px);
+	transition: 0.1s;
+}
+
+.slide:nth-child(1) {
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.slide:nth-child(2) {
+  background-image: url("2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+.slide:nth-child(3) {
+  background-image: url("3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+
+.slide:nth-child(4) {
+  background-image: url("4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+.slide:nth-child(5) {
+  background-image: url("5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+@-webkit-keyframes slide{
+  
+  8% {margin-left: 0;}
+  11% {margin-left: 0;}
+  16% {margin-left: -100vw;}
+  24% {margin-left: -100vw;}
+  27% {margin-left: -100vw;}
+  32% {margin-left: -200vw;}
+  40% {margin-left: -200vw;}
+  43% {margin-left: -200vw;}
+  48% {margin-left: -300vw;}
+  56% {margin-left: -300vw;}
+  64% {margin-left: -300vw;}
+  67% {margin-left: -300vw;}
+  72% {margin-left: -400vw;}
+  80% {margin-left: -400vw;}
+  90% {margin-left: -400vw;}
+  97% {margin-left: -400vw;}
+  
+}
+
+
+
+
+
+
+
+nav.navbar.navbar-default
+{
+	width: 100%
+	height: 10vh;
+	background-color: #030303;
+	margin: 0;
+	padding: 0;
+	border:0;
+	border-radius: 0;
+	position:sticky;
+	position: -webkit-sticky;
+	top:0;
+	z-index: 1000000;
+}
+
+
+.navbar-toggle
+	{
+		
+	}
+
+.navbar-header
+		{
+			height: 10vh;
+			padding-top: 0;
+			margin-top: 0;
+
+		}
+
+.navbar-header .navbar-brand
+		{
+			height: 10vh;
+			padding-top: 0;
+			margin-top: 0;
+			
+		}
+
+.navbar-header a.navbar-brand img
+		{
+			height: 12vh;
+			padding-top: 0;
+			margin-top: 0;
+		}
+
+.navbar-nav > li:hover , .navbar-default .navbar-nav > li:hover > a 
+		{
+			background-color: #394857;
+			color: #ffffff;
+			
+			
+		}
+
+.navbar-nav > li > a 
+		{
+			height: 10vh;
+			padding-top: 3.5vh;
+			
+		}
+
+.navbar-default .navbar-nav > li > a
+		{
+			color:#eeeeee;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-weight: 550;
+			font-variant:small-caps;
+			font-size: 1.3em;
+		}
+
+		
+
+
+
+img.dil
+{
+      border-radius: 50%;
+      width:80%;
+      opacity: 0.5;
+      transition: 0.2s;
+      margin-top: 1.7vh;
+      
+      
+      
+}
+
+img.dil:hover
+{
+      border-radius: 50%;
+      width:80%;
+      opacity: 1;
+      cursor: pointer;
+      transition: 0.2s;
+      
+      /*box-shadow: 0px 0px 1px 1px white;*/
+      
+}
+
+
+td.rez {  text-align: center; vertical-align: top; width: 2vw; }
+
+.container 
+
+	{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+
+
+h1.tanıtımBaslık
+
+{
+	color:#DBC7B9;
+	font-family: 'Bahiana';
+	text-align: left;
+	font-variant:small-caps;
+	margin-bottom: 5vh;
+	-webkit-box-reflect: below -12px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(35%, transparent), to(rgba(255, 255, 255, 0.35)));
+}
+
+
+p.hakkımızdaText
+{
+	text-align: left;
+	word-spacing: 2px;
+	font-family: 'Bahiana';
+	font-size: 18px;
+	color: #DBC7B9;
+}
+
+
+
+
+
+/*PHOTO GALLERY*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.photoGallery {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0px 10px 10px black;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 1000;
+}
+
+.prev 
+{
+	left:0;
+	border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #cba987;
+   text-decoration: none;
+}
+
+
+.numbertext {
+  color: #cba987;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 40%;
+}
+
+
+.caption-container {
+	width: 90%;
+  text-align: center;
+  background-color: #121212;
+  padding: 2px 16px;
+  color: #cba987;
+  font-size: 1.2em;
+}
+
+.row
+{
+	margin-left: 0;
+	margin-right: 0;
+	
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 11.85%;
+}
+
+.photoG
+{
+	width: 90%;
+	height: 72vh;
+	box-shadow: -10px -10px 30px rgba(0,0,0,1);
+}
+
+@media(max-width: 768px)
+{
+	.photoG
+	{
+	width: 90%;
+	height: 30vh;
+	box-shadow: -10px -10px 30px rgba(0,0,0,1);
+	}
+
+.cursor {
+  cursor: pointer;
+  height: 3vh;
+  width: 100%;
+  box-shadow: 0px 10px 10px black;
+}
+
+.navbar-toggle
+	{
+		margin-left: 8px;
+		border:none;
+	}
+
+.navbar-default .navbar-collapse
+	{
+		border:none;
+	}
+
+}
+
+
+.demo 
+{
+  transition: 0.1s;
+}
+
+.active , .demo:hover 
+{
+  transition: 0.1s;
+  transform: scale(0.9,0.9);
+}
+
+
+/*PHOTO GALLERY ENDS*/
+
+/* Sayfa Sonu İletişim Bilgileri */
+
+p.bottomMedia
+	{	
+		margin:0;
+		padding:0;
+		color:grey;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	p.bottomMedia:before
+	{	
+		content:"Follow us";
+	}
+
+	.imgpad
+	{
+		margin: 2% 2% 2vh 2%;
+		padding:0% 0% 0% 0%;
+		opacity:1;
+		width:8%;
+		height: auto;
+		transition: 0.20s;
+	}
+
+	.imgpad:hover
+	{
+		
+		animation: shake 0.5s; 
+		animation-iteration-count: 1; 
+		
+
+	}
+
+	
+
+@keyframes shake {
+  0%   { transform: translate(1px, 0px) rotate(30deg); }
+  10%  { transform: translate(1px, 0px) rotate(60deg); }
+  20%  { transform: translate(-1px, 0px) rotate(90deg); }
+  30%  { transform: translate(-1px, 0px) rotate(120deg); }
+  40%  { transform: translate(1px, 0px) rotate(150deg); }
+  50%  { transform: translate(1px, 0px) rotate(180deg);  }
+  60%  { transform: translate(-1px, 0px) rotate(210deg); }
+  70%  { transform: translate(-1px, 0px) rotate(240deg); }
+  80%  { transform: translate(1px, 0px) rotate(270deg); }
+  90%  { transform: translate(1px, 0px) rotate(300deg);  }
+  100% { transform: translate(-1px, 0px) rotate(330deg); }
+}
+
+/* Sayfa Sonu İletişim Bilgileri BİTİŞ */
+
+
+
+/*################################ROTALAR SAYFASI#####################################*/
+
+img.rotaImg
+{
+	width: 100%;
+	height: 25vh;
+	float: left;
+	margin-bottom: 1vh;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px black;
+	transition: 0.15s;
+	
+}
+
+img.rotaImg:hover
+{
+	
+	transition: 0.15s;
+	transform: scale(1.1);
+	cursor: pointer;
+
+}
+
+.rotaCol
+	{
+		margin-top: 2vh;
+	}
+
+p.rota
+{
+
+	text-align: left;
+	margin-bottom: 1vh;
+	word-spacing: 2px;
+	font-family: 'Bahiana';
+	font-size: 18px;
+	font-variant:small-caps;
+	color: #DBC7B9;
+	cursor: pointer;
+
+}
+
+div.rotaAçKapa
+{
+	
+	border-radius: 5px;
+	z-index: 100;
+
+}
+
+.ilRow
+{
+	width: 100%;
+}
+
+.ilColumn:nth-child(1)
+{
+	width: 25%;
+	float: left;
+	
+}
+.ilColumn:nth-child(2)
+{
+	width: 25%;
+	float: left;
+	
+	
+	text-align: left;
+	padding-top: 1.25%;
+	
+	padding-left: 2.5%;
+}
+
+.ilColumn:nth-child(3)
+{
+	width: 47%;
+	float: left;
+	padding-left:3%;
+	text-align: justify;
+}
+
+.ilContent > a , .ilContent
+{
+	color: grey;
+	font-variant:small-caps;
+	text-decoration-line: none;
+	text-decoration-color: none;
+	text-align: left
+}
+
+
+.rotaRow {
+  margin: 8px -16px;
+
+}
+
+/* Add padding BETWEEN each column */
+.rotaRow,
+.rotaRow > .rotaColumn {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.rotaColumn {
+  float: left;
+  width: 28%;
+  margin-left: 4%;
+}
+
+/* Clear floats after rows */ 
+.rotaRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.rotaContent {
+  background-color: rgba(245,245,245,1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  margin: auto;
+  padding-bottom: 10px;
+  height: 80vh;
+  color: black;
+  
+  text-align: center;
+  font-family: arial;
+}
+
+.rotaTitle
+{
+	color:grey;
+}
+
+img.rotaPort
+	{
+		height: 25vh;
+		width: 100%;
+		margin-bottom: 1vh;
+	}
+
+@media(max-width: 768px)
+{
+	.rotaColumn
+		{
+			width: 92%;
+		}
+}
+
+.rotaText
+{
+	overflow: auto;
+	height: 40vh;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+
+}
+
+
+.rotaİç
+{
+	display: none;
+	
+}
+
+p.mapsText
+{
+	color:grey;
+	font-variant:small-caps;
+	font-size: 0.8em;
+	vertical-align: center;
+	text-align: center;
+	margin-top: 10%;
+}
+
+img.googlemaps
+{
+	width:20%;
+	float: left;
+	margin-left: 2vw;
+	margin-top: -5%;
+	-webkit-box-reflect: below 4px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+
+a.mapYönlendirme 
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+/* GoogleMap Start*/
+
+	#map
+  {
+    height: 27vh;
+    width: 30%;
+    float: right;
+  }
+
+/* GoogleMap Finish*/
+
+
+
+
+
+
+
+/*************************************** REZERVASYON SAYFASI ***************************************/
+
+
+
+/*************************************** LOGİN BUTTON ***************************************/
+
+	
+	button.admin
+		{
+			position: absolute;
+			right: 5%;
+			margin-top: 0.5vh;
+			border-radius: 4px;
+			width: 7%;
+			color: white;
+			background:none;
+			border:none;
+			font-size: 1.1em;
+			font-variant: small-caps;
+			text-align: center;
+			padding:5px;
+			transition: 0.1s;
+
+		}
+
+	button.admin:hover
+		{
+			background-color: rgba(175, 45, 45,1);
+  			transition: 0.1s;
+		}
+
+	@media(max-width: 400px)
+		{
+			button.admin
+				{
+					width: 30%;
+				}
+		}
+
+	@media(min-width: 401px) and (max-width: 550px)
+		{
+			button.admin
+				{
+					width: 25%;
+				}
+		}
+
+	@media(min-width: 551px) and (max-width: 768px)
+		{
+			button.admin
+				{
+					width: 13%;
+				}
+		}
+
+	@media(min-width: 769px) and (max-width: 1000px)
+		{
+			button.admin
+				{
+					width: 10%;
+				}
+		}
+
+
+	img.admin
+		{
+			width: 20%;
+		}
+
+
+.logModal 
+{
+  display: none; 
+  position: fixed; 
+  z-index: 100000000000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.85); 
+  overflow: hidden;
+  
+}
+
+
+.modal-content 
+{
+  background-color: rgba(10,10,10,1);
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%; 
+}
+
+@media(max-width: 600px)
+	{
+		.modal-content
+			{
+				width: 70%;
+			}
+	}
+
+@media (min-width: 601px) and (max-width: 800px)
+	{
+		.modal-content
+			{
+				width: 50%;
+			}
+	}
+
+@media (min-width: 801px) and (max-width: 1000px)
+	{
+		.modal-content
+			{
+				width: 35%;
+			}
+	}
+
+
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+
+
+
+
+.close 
+{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  
+}
+
+.close:hover,
+.close:focus 
+{
+  color: red;
+  cursor: pointer;
+}
+
+
+.imgcontainer
+{
+	width: 100%;
+	margin-bottom: 5vh;
+}
+
+img.avtr
+	{
+		width: 40%;
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-top: 5vh;
+	}
+
+
+.logContainer
+{	
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 6vh;
+	width: 80%;
+}
+
+.logButton
+{
+	width: 40%;
+	background-color: rgba(255, 65, 54,0.8);
+	border:none;
+	border-radius: 5px;
+	padding:1.8%;
+	color: white;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin-top: 5vh;
+	margin-left: 30%;
+	margin-right: 30%;
+	transition: .2s;
+}
+
+.logButton:hover
+{
+	background-color: rgba(255, 65, 54,1);
+	transition: .2s;
+}
+
+
+
+
+
+
+
+
+
+/*************************************** LOGİN BUTTON SONU ***************************************/
+
+
+
+
+.colPad
+	{
+		padding-right: 0;
+		padding-left: 0;
+		margin-top: 5vh;
+	}
+
+.adres
+{
+	margin-bottom: 5vh;
+	padding: 0;
+	border-radius: 15px;	
+}
+
+/******************************************** İLETİŞİM FORMU ********************************************/
+
+.formluk
+{
+    
+    border-radius: 15px;
+    background-image: url(telefon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding:5%;
+    box-shadow: 6px 6px 20px 2px rgba(0,0,0,0.9);
+
+}
+
+
+label
+{
+      color:white;
+      float: left;
+}
+
+
+
+
+input[type=text], textarea ,input[type=email] ,input[type=password]
+{
+  width:100%;
+  border:1px solid #ccc;
+  border-radius:5px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.9) ;
+  margin-top:1vh;
+  margin-bottom:1vh;
+  resize: vertical;
+  padding:1%;
+}
+
+input[type=submit] , input[type=reset] {
+    background-color: rgba(75, 105, 135,1);
+    color: white;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.9) ;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    width: 30%;
+    margin-right: 1vw;
+    
+    transition: 0.2s;
+}
+
+input[type=submit]:hover , input[type=reset]:hover
+{
+  
+  background-color: rgba(255, 65, 54,1);
+  transition: 0.2s;
+  
+}
+
+/******************************************** İLETİŞİM FORMU SONU ********************************************/
+
+
+
+/******************************************** TAKVİM BAŞI ********************************************/
+
+.calendar
+ {
+ 	display: none;
+ 	width: 87%;
+ 	margin-left: 6.5%;
+ 	margin-top: 2vh;
+ }
+
+
+.month {
+  padding: 5vh 5vw;
+  width: 100%;
+  background-image: url("calendar.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.calSection ul 
+{
+  margin: 5vh 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calSectionul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.calSection .pre {
+  
+  padding: 10px;
+  position: absolute;
+  top:10vh;
+  left:15vw;
+  color: white;
+  font-size: 1.2em;
+}
+
+.calSection .nxt {
+  
+  padding: 10px;
+  position: absolute;
+  top:10vh;
+  right: 15vw;
+  color: white;
+  font-size: 1.2em;
+  
+}
+
+.calSection .nxt:hover , .calSection .pre:hover
+	{
+		background-color: rgba(0, 0, 0, 0.8);
+  		color: rgb(255,65,54);
+   		text-decoration: none;
+   		cursor: pointer;
+	}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.5%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:0.8em;
+  margin-left: 1.2px;
+  padding: 2.5% 1%;
+  color: #444;
+  background: #d1d1d1;
+  
+}
+
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:1002px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+
+/******************************************** TAKVİM SONU ********************************************/
+
+
+
+/*********************************************** Profil Kartı ***********************************************/
+
+.title 
+	{
+ 		color: grey;
+ 		font-size: 0.8em;
+	}
+
+.tanıtım 
+	{
+  		box-shadow: 3px 3px 10px 3px rgba(0,0,0,1);
+  		background-color: rgba(16,19,19,1);
+  		width: 80%;
+  		height: 57vh;
+  		margin-bottom: 3vh;
+  		text-align: center;
+  		font-family: arial;
+  		border-radius: 15px;
+	}
+
+.fa
+	{
+		font-size: 1.55em;
+		color: grey;
+		margin-left: 0.75vw;
+		margin-right: 0.75vw;
+	}
+
+.mk
+	{
+		width: 100%; 
+		border-top-left-radius: 15px; 
+		border-top-right-radius: 15px;
+		-webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(90%, transparent), to(rgba(255, 255, 255, 0.4)));
+	}
+
+/******************************************** Profil Kartı SONU ********************************************/
+
+
+.ulaş
+	{
+		background-image: url("telResim.jpg");
+		background-size: cover;
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		border-radius: 15px;
+		box-shadow: 3px 3px 10px 3px rgba(0,0,0,1);
+		
+	}
+
+
+.ilMail
+{
+    text-decoration: none;
+   	color: rgba(75, 105, 135,1);
+}
+
+.ilMail:hover , .titleCard:hover , .fa:hover
+
+{
+  text-decoration: none;
+    color: rgba(255, 65, 54,1);
+    cursor: default;
+}
+
+.adresBaslık
+{
+	margin-top: 0;
+	padding-top: 10%;
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+}
+
+.adresText
+{
+  color:white;
+  font-size: 0.8em;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+}
+
+
+@media(max-width: 576px)
+	{
+		.adresText
+			{
+				font-size: 1.1em;
+			}
+
+		.adresBaslık
+			{
+				font-size: 1.7em;
+			}
+
+	
+	}
+
+
+
+@media(min-width:375px) and (max-width: 550px)
+	{
+		.tanıtım
+			{
+				height: 70vh;
+			}
+	}
+
+@media(min-width:551px) and (max-width: 767px)
+	{
+		.tanıtım
+			{
+				height: 85vh;
+			}
+	}
+
+
+@media(min-width:768px) and (max-width: 1125px)
+	{
+		.tanıtım
+			{
+				height: 54vh;
+			}
+	}
+
+@media(min-width: 768px)
+	{
+		.ulaş , .tanıtım
+			{
+				margin-right: 15%;
+			}
+	}
+
+
+/* REZERVASYON SAYFASI SONU */
