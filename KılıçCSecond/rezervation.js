@@ -3,17 +3,17 @@
 $(document).ready(function(){
 	$('li#w1').each(function()
 	{
-		$(this).css("background-color","red");
+		$(this).css("background-color","#EF5350");
 	});
 
 	$('li#w5').each(function()
 	{
-		$(this).css("background-color","blue");
+		$(this).css("background-color","#42A5F5");
 	});
 
 	$('li#w14').each(function()
 	{
-		$(this).css("background-color","green");
+		$(this).css("background-color","#66D06A");
 	});
 
 
