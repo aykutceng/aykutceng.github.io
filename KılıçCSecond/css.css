@@ -1192,6 +1192,11 @@ input[type=submit]:hover , input[type=reset]:hover
  		font-size: 0.8em;
 	}
 
+.titleCard
+	{
+		font-size: 0.9em;
+	}
+
 .tanıtım 
 	{
   		box-shadow: 3px 3px 10px 3px rgba(0,0,0,1);
@@ -1206,7 +1211,7 @@ input[type=submit]:hover , input[type=reset]:hover
 
 .fa
 	{
-		font-size: 1.55em;
+		font-size: 1.05em;
 		color: grey;
 		margin-left: 0.75vw;
 		margin-right: 0.75vw;
@@ -1242,7 +1247,7 @@ input[type=submit]:hover , input[type=reset]:hover
    	color: rgba(75, 105, 135,1);
 }
 
-.ilMail:hover , .titleCard:hover , .fa:hover
+.ilMail:hover , .titleCard:hover 
 
 {
   text-decoration: none;
@@ -1267,6 +1272,18 @@ input[type=submit]:hover , input[type=reset]:hover
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
 }
+
+p.adresText > a 
+	{
+		text-decoration: none;
+		color: grey;
+	}
+
+p.adresText:hover > a > i , p.adresText:hover > a , .fa:hover
+	{
+		text-decoration: none;
+		color: rgba(255, 65, 54,1) ;
+	}
 
 
 @media(max-width: 576px)
