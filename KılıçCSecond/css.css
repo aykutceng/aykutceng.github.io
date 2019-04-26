@@ -1004,7 +1004,7 @@ img.avtr
 {
     
     border-radius: 15px;
-    background-image: url(telefon.jpg);
+    /*background-image: url(telefon.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1195,12 +1195,14 @@ input[type=submit]:hover , input[type=reset]:hover
 .titleCard
 	{
 		font-size: 0.9em;
+		color: #bbbbbb;
 	}
 
 .tanıtım 
 	{
   		box-shadow: 3px 3px 10px 3px rgba(0,0,0,1);
-  		background-color: rgba(16,19,19,1);
+  		/*background-color: rgba(16,19,19,1);*/
+  		background-color: #283746;
   		width: 80%;
   		height: 57vh;
   		margin-bottom: 3vh;
