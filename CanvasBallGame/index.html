@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>HW3 Top Oyunu</title>
+
+
+
+	<style>
+    	
+
+    	canvas#canvas
+    		{
+    			background: #cfcfcf;
+    			display: block;
+    			margin: 0 auto;
+    			padding: 0;
+    			width: 475px;
+    			height: 400px;
+    			position: absolute;
+    			top: 50vh;
+    			left: 50vw;
+    			transform: translate(-50%,-50%);
+    		}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+	<canvas id="canvas"></canvas>    <!-- JS ile tanımladığımız animasyonlar burada görüntülenecek -->
+
+
+
+	<script>
+
+
+
+		var canvas = document.getElementById("canvas");
+
+		var x = canvas.width/2;
+		var y = canvas.height-30;
+		var dx = .85;                               
+		var dy = -.35;
+
+		var R = 3;
+
+		var stckHeight = 3;
+		var stckWidth = 60;
+		var stck = (canvas.width-stckWidth) / 2;
+		var sagPad = false;
+		var solPad = false;
+
+		var brickHeight = 10;
+		var brickWidth = 50;
+		var bricks = [];
+
+		for(i=0;i<5;i++)  /* Daha sonra her bir sütunun görünürlüğünü iptal etmek için değer 0 yapılacak */
+			{
+				bricks[i] = {görünürlük:1};       /* bricks[] for "R B G P Y" */
+			}
+
+				
+
+		var score = 0; /* Toplanan puanların kaydedileceği değişken*/
+
+		var renk = "rgba(90, 190, 235, 1)"; /*Oyun başladığındaki top rengi*/
+
+		
+		var puanDurumu = canvas.getContext('2d'); /* Score Tablosu*/
+		var sbtCubuk = canvas.getContext("2d");  /* Sabit, kırılmaz çubuk*/
+		var circle = canvas.getContext("2d");  /* oluşturduğumuz top */
+		var hareketliCubuk = canvas.getContext("2d"); /*dipteki topu tutan çubuk*/
+		
+
+		document.addEventListener("keydown", keyDownHandler, false);
+		document.addEventListener("keyup", keyUpHandler, false);				/* Keybord yön tuşları ve mouse ile kontrol için Event eklediğimiz kısım*/
+		document.addEventListener("mousemove", mouseMoveHandler, false);
+
+		function mouseMoveHandler(e) 
+		{
+		    var relativeX = e.clientX - canvas.offsetLeft;
+		    if(relativeX > 0 && relativeX < canvas.width) 
+			    {
+			        stck = relativeX - stckWidth/2;
+	    		}
+		}
+
+		function sutunCiz()   /*görünürlük:0 olana kadar sütunları çizdiğimiz fonksiyon*/
+			{
+				
+				if(bricks[0].görünürlük == 1)
+					{
+						var redBrick = canvas.getContext("2d");
+						redBrick.beginPath();
+						redBrick.rect(55, 10, brickWidth, brickHeight);
+						redBrick.fillStyle = "#ff1744";
+						redBrick.fill();
+						redBrick.closePath();
+					}
+
+				if(bricks[1].görünürlük == 1)
+					{
+						var blueBrick = canvas.getContext("2d");
+						blueBrick.beginPath();
+						blueBrick.rect(125, 10, brickWidth, brickHeight);
+						blueBrick.fillStyle = "#2979ff";
+						blueBrick.fill();
+						blueBrick.closePath();
+					}
+
+				if(bricks[2].görünürlük == 1)
+					{	
+						var greenBrick = canvas.getContext("2d");
+						greenBrick.beginPath();
+						greenBrick.rect(195, 10, brickWidth, brickHeight);
+						greenBrick.fillStyle = "#00e676";
+						greenBrick.fill();
+						greenBrick.closePath();
+					}
+				if(bricks[3].görünürlük == 1)
+					{
+						var purpleBrick = canvas.getContext("2d");
+						purpleBrick.beginPath();
+						purpleBrick.rect(95, 30, brickWidth, brickHeight);
+						purpleBrick.fillStyle = "#d500f9";
+						purpleBrick.fill();
+						purpleBrick.closePath();
+					}
+				if(bricks[4].görünürlük == 1)
+					{
+						var yellowBrick = canvas.getContext("2d");
+						yellowBrick.beginPath();
+						yellowBrick.rect(165, 30, brickWidth, brickHeight);
+						yellowBrick.fillStyle = "#ffea00";
+						yellowBrick.fill();
+						yellowBrick.closePath();
+					}
+			}
+
+		
+		
+
+		function keyDownHandler(e) 
+			{
+			    if(e.key == "Right" || e.key == "ArrowRight") 
+				    {
+				        sagPad = true;
+				    }
+			    else if(e.key == "Left" || e.key == "ArrowLeft") 
+				    {
+				        solPad = true;
+				    }
+			}
+
+		function keyUpHandler(e) 
+			{
+			    if(e.key == "Right" || e.key == "ArrowRight") 
+				    {
+				        sagPad = false;
+				    }
+			    else if(e.key == "Left" || e.key == "ArrowLeft") 
+				    {
+				        solPad = false;
+				    }
+			}
+
+		function sutunKır()
+			{
+				if(bricks[0].görünürlük == 1)
+					{
+						if(x >= 55 - R && x <= 55+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
+							{
+								if(x <= 53.1 || x >= 103.1)
+									{
+					                	dx = -dx;
+					                	bricks[0].görünürlük = 0;
+					                	renk = "#ff1744";
+					                	score += 20;
+					                	bitis();
+					                }
+
+					            else
+					            	{
+					            		dy = -dy;
+					                	bricks[0].görünürlük = 0;
+					                	renk = "#ff1744";
+					                	score += 20;
+					                	bitis();
+					            	}
+			            	}	
+					}
+				if(bricks[1].görünürlük == 1)
+					{
+						if(x >= 125.1 - R && x <= 125.1+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
+							{
+								if(x <= 123.1 || x >= 173.1)
+									{
+					                	dx = -dx;
+					                	bricks[1].görünürlük = 0;
+					                	renk = "#2979ff";
+					                	score += 40;
+					                	bitis();
+					                }
+
+					            else
+						            {
+						            	dy = -dy;
+					                	bricks[1].görünürlük = 0;
+					                	renk = "#2979ff";
+					                	score += 40;
+					                	bitis();
+						            }
+			            	}	
+					}
+				if(bricks[2].görünürlük == 1)
+					{
+						if(x >= 195.1 - R && x <= 195.1+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
+							{
+								if(x <= 193.1 || x >= 243.1 )
+									{
+					                	dx = -dx;
+					                	bricks[2].görünürlük = 0;
+					                	renk = "#00e676";
+					                	score += 80;
+					                	bitis();
+					                }
+
+					            else
+						            {
+						            	dy = -dy;
+					                	bricks[2].görünürlük = 0;
+					                	renk = "#00e676";
+					                	score += 80;
+					                	bitis();
+						            }
+			            	}	
+					}
+				if(bricks[3].görünürlük == 1)
+					{
+						if(x >= 95.1 - R && x <= 95.1+brickWidth + R && y >= 30.1 -R && y <= 30.1+brickHeight+R) 
+							{
+								if(x <= 93.1 || x >= 143.1 )
+									{
+					                	dx = -dx;
+					                	bricks[3].görünürlük = 0;
+					                	renk = "#d500f9";
+					                	score += 60;
+					                	bitis();
+				                	}
+			                	else
+			                		{
+			                			dy = -dy;
+					                	bricks[3].görünürlük = 0;
+					                	renk = "#d500f9";
+					                	score += 60;
+					                	bitis();
+			                		}
+			            	}	
+					}
+				if(bricks[4].görünürlük == 1)
+					{
+						if(x >= 165.1 - R && x <= 165.1+brickWidth + R && y >= 30.1 -R && y <= 30.1+brickHeight+R) 
+							{
+								if(x <= 163.1 || x >= 213.1 )
+									{
+					                	dx = -dx;
+					                	bricks[4].görünürlük = 0;
+					                	renk = "#ffea00";
+					                	score += 50;
+					                	bitis();
+				                	}
+				                else
+				                	{
+					                	dy = -dy;
+					                	bricks[4].görünürlük = 0;
+					                	renk = "#ffea00";
+					                	score += 50;
+					                	bitis();
+				                	}
+			              	}	
+					}
+
+				if(x >= 110.1 - R && x <= 110.1+55 + R && y >= 70.1 -R && y <= 70.1+4+R) 
+							{
+								if(x < 108.1 || x > 163.1)
+								{
+									dx = -dx;
+								}
+			                	
+			                	else
+			                	{
+			                		dy = -dy;
+			                	}
+
+			            	}
+
+			    
+			}
+
+
+		
+
+		function getScore()
+			{
+				puanDurumu.beginPath();
+				puanDurumu.font = "8px Arial";
+			    puanDurumu.fillStyle = "#111111";
+			    puanDurumu.fillText("Score: "+score, 6, 10);
+			    puanDurumu.closePath();
+			
+			}
+
+		
+
+		function hareketliCbkCiz() 
+			{
+			    hareketliCubuk.beginPath();
+			    hareketliCubuk.rect(stck, canvas.height-stckHeight, stckWidth, stckHeight);
+			    hareketliCubuk.fillStyle = "rgba(90, 190, 235, 1)";
+			    hareketliCubuk.fill();
+			    hareketliCubuk.closePath();
+			}
+
+
+		function sabitCubuk()
+			{	
+				sbtCubuk.beginPath();
+				sbtCubuk.rect(110, 70, 60, 4);
+				sbtCubuk.fillStyle = "black";
+				sbtCubuk.fill();
+				sbtCubuk.closePath();
+			}
+
+		function bitis()
+			{
+				if(score >= 230)
+					{
+							setTimeout(function()
+								{ 
+									alert("YOU WIN, CONGRATULATIONS!");   /*BURADA EKLEDİĞİMİZ 0.03 SANİYELİK GECİKME SAYESİNDE SON SUTUNUN KIRILDIĞINI VE TOP RENGİNİN DEĞİŞTİĞİNİ GÖREBİLİYORUZ*/
+									document.location.reload();
+							        clearInterval(intrvl); 
+								}, 30);
+					}
+				
+			}
+
+		function topCiz() 
+			{
+			    circle.beginPath();
+			    circle.arc(x, y, R, 0, Math.PI*2);
+			    circle.fillStyle = renk;
+			    circle.fill();
+			    circle.closePath();
+			}
+
+		function draw() 
+		{
+			    circle.clearRect(0, 0, canvas.width, canvas.height);
+			    topCiz();
+			    hareketliCbkCiz();
+			    sutunKır();
+			    getScore();
+			    sabitCubuk();
+			    sutunCiz();
+			    
+
+			    if(x + dx > canvas.width-R || x + dx < R) 
+				    {
+	    				dx = -dx;
+					}
+
+				if(y + dy < R) 
+					{
+	    				dy = -dy;
+					}
+
+				else if(y + dy > canvas.height - 1.5*R) 
+					{
+						if(x > stck - R && x < stck + stckWidth + R) 
+							{
+		        				dy = -(dy + .5);
+		        				
+		    				}
+					    
+
+					    else 
+					    	{
+						        alert("GAME OVER");
+						        document.location.reload();
+						        clearInterval(intrvl);
+					    	}
+					}
+
+				if(sagPad && stck < canvas.width-stckWidth) 
+					{
+        				stck += 2;
+    				}
+			    else if(solPad && stck > 0) 
+				    {
+				        stck -= 2;
+				    }
+
+				x += dx;
+			    y += dy;
+		}
+		 var intrvl = setInterval(draw, 10);
+
+
+	</script>
+
+</body>
+</html>
