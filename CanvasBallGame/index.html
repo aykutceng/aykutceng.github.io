@@ -26,6 +26,27 @@
     			left: 50vw;
     			transform: translate(-50%,-50%);
     		}
+
+    	a > img.geri:hover
+    		{
+    			-webkit-animation: left 2s infinite;
+    			animation: left 2s infinite;
+    		}
+
+    		@keyframes left
+    			{
+    				0% {margin-left: 0;}
+    				50% {margin-left: -2.5vw;}
+    				0% {margin-left: 0;}
+    			}
+    		@-webkit-keyframes left
+    			{
+    				0% {margin-left: 0;}
+    				50% {margin-left: -2.5vw;}
+    				0% {margin-left: 0;}
+    			}
+
+
     </style>
 
 
@@ -38,8 +59,8 @@
 	<canvas id="canvas"></canvas>    <!-- JS ile tanımladığımız animasyonlar burada görüntülenecek -->
 
 
-	<div style="position: absolute; left: 5vw; bottom: 5vh;">
-    	<a href="https://aykutceng.github.io/"><img style="width:15%;" src="arrowleft.png"></a>
+	<div style="position: absolute; left: 5vw; top: 5vh; margin-left: 0;">
+    	<a href="https://aykutceng.github.io/"><img class="geri" style="width:8%;" src="arrowleft.png"></a>
   	</div>
 
 
