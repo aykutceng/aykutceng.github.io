@@ -75,12 +75,21 @@
 
 	<script>
 
+
+
 		var canvas = document.getElementById("canvas");
 
+		var xMin = -1;
+		var xMax = 1;
+		var yMin = 0.4;
+		var yMax = 1;
 		var x = canvas.width/2;
 		var y = canvas.height-30;
-		var dx = .85;                               
-		var dy = -.35;
+		var xSpeed = Math.random()*(xMax-xMin)+xMin;      /*Topun başlangıçta x düzleminde fırlatılacağı ve  her 10ms'de alacağı -1 ile 1 arasındaki pixel değeri--Sol ya da Sağ--*/                         
+		var ySpeed = Math.random()*(yMin-yMax)-yMin;	   /*Topun başlangıçta y düzleminde fırlatılacağı ve  her 10ms'de alacağı -0.4 ile -1 arasındaki pixel değeri----Yukarı----*/ 
+		var vurusSpeed = Math.random()/2;			   /*Topun hareketli çubuğa her çarpışında y düzlemindeki aldığı pixel değeri 0 ile 0.5 arası artar*/
+		var dx = xSpeed;
+		var dy = ySpeed;
 
 		var R = 3;
 
@@ -210,7 +219,7 @@
 					{
 						if(x >= 55 - R && x <= 55+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
 							{
-								if(x <= 53.1 || x >= 103.1)
+								if(x <= 53.1 || x >= 107.1)
 									{
 					                	dx = -dx;
 					                	bricks[0].görünürlük = 0;
@@ -233,7 +242,7 @@
 					{
 						if(x >= 125.1 - R && x <= 125.1+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
 							{
-								if(x <= 123.1 || x >= 173.1)
+								if(x <= 123.1 || x >= 177.1)
 									{
 					                	dx = -dx;
 					                	bricks[1].görünürlük = 0;
@@ -256,7 +265,7 @@
 					{
 						if(x >= 195.1 - R && x <= 195.1+brickWidth + R && y >= 10.1 -R && y <= 10.1+brickHeight+R) 
 							{
-								if(x <= 193.1 || x >= 243.1 )
+								if(x <= 193.1 || x >= 247.1 )
 									{
 					                	dx = -dx;
 					                	bricks[2].görünürlük = 0;
@@ -279,7 +288,7 @@
 					{
 						if(x >= 95.1 - R && x <= 95.1+brickWidth + R && y >= 30.1 -R && y <= 30.1+brickHeight+R) 
 							{
-								if(x <= 93.1 || x >= 143.1 )
+								if(x <= 93.1 || x >= 147.1 )
 									{
 					                	dx = -dx;
 					                	bricks[3].görünürlük = 0;
@@ -301,7 +310,7 @@
 					{
 						if(x >= 165.1 - R && x <= 165.1+brickWidth + R && y >= 30.1 -R && y <= 30.1+brickHeight+R) 
 							{
-								if(x <= 163.1 || x >= 213.1 )
+								if(x <= 163.1 || x >= 217.1 )
 									{
 					                	dx = -dx;
 					                	bricks[4].görünürlük = 0;
@@ -320,9 +329,9 @@
 			              	}	
 					}
 
-				if(x >= 110.1 - R && x <= 110.1+55 + R && y >= 70.1 -R && y <= 70.1+4+R) 
+				if(x >= 110.1 - R && x <= 110.1+55 + R && y >= 70 -R && y <= 70+4+R) 
 							{
-								if(x < 108.1 || x > 163.1)
+								if(x < 108.1 || x > 168)
 								{
 									dx = -dx;
 								}
@@ -415,11 +424,19 @@
 	    				dy = -dy;
 					}
 
-				else if(y + dy > canvas.height - 1.25*R) 
+				else if(y + dy > canvas.height - 1.5*R) 
 					{
 						if(x > stck - R && x < stck + stckWidth + R) 
 							{
-		        				dy = -(dy + .5);
+								var mutlak = Math.abs(dy);
+								if(mutlak <= 2.75)
+									{
+			        					dy = -(dy + vurusSpeed);
+			        				}
+		        				else
+		        					{
+		        						dy = -dy;
+		        					}
 		        				
 		    				}
 					    
