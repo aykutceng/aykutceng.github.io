@@ -79,13 +79,23 @@
 
 		var canvas = document.getElementById("canvas");
 
-		var xMin = -1;
-		var xMax = 1;
+		var xMin = 0.5;
+		var xMax = 1.5;
 		var yMin = 0.4;
 		var yMax = 1;
 		var x = canvas.width/2;
 		var y = canvas.height-30;
-		var xSpeed = Math.random()*(xMax-xMin)+xMin;      /*Topun başlangıçta x düzleminde fırlatılacağı ve  her 10ms'de alacağı -1 ile 1 arasındaki pixel değeri--Sol ya da Sağ--*/                         
+		var xSpeed;
+		var rndm = Math.random()*2 + 1;
+
+			if(Math.floor(rndm) ==1)
+				{
+					xSpeed = Math.random()*(xMax-xMin)+xMin;
+				}
+			else if(Math.floor(rndm) == 2)
+				{
+					xSpeed = Math.random()*(xMin-xMax)-xMin;
+				}                         
 		var ySpeed = Math.random()*(yMin-yMax)-yMin;	   /*Topun başlangıçta y düzleminde fırlatılacağı ve  her 10ms'de alacağı -0.4 ile -1 arasındaki pixel değeri----Yukarı----*/ 
 		var vurusSpeed = Math.random()/2;			   /*Topun hareketli çubuğa her çarpışında y düzlemindeki aldığı pixel değeri 0 ile 0.5 arası artar*/
 		var dx = xSpeed;
@@ -329,9 +339,9 @@
 			              	}	
 					}
 
-				if(x >= 110.1 - R && x <= 110.1+55 + R && y >= 70 -R && y <= 70+4+R) 
+				if(x >= 110.1 - R && x <= 110.1+55 + R && y >= 69.99 -R && y <= 70.11+4+R) 
 							{
-								if(x < 108.1 || x > 168)
+								if(x < 108.1 || x > 168.09)
 								{
 									dx = -dx;
 								}
@@ -424,7 +434,7 @@
 	    				dy = -dy;
 					}
 
-				else if(y + dy > canvas.height - 1.5*R) 
+				else if(y + dy > canvas.height - 1.25*R) 
 					{
 						if(x > stck - R && x < stck + stckWidth + R) 
 							{
@@ -451,11 +461,11 @@
 
 				if(sagPad && stck < canvas.width-stckWidth) 
 					{
-        				stck += 2;
+        				stck += 2.5;
     				}
 			    else if(solPad && stck > 0) 
 				    {
-				        stck -= 2;
+				        stck -= 2.5;
 				    }
 
 				x += dx;
