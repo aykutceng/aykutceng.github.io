@@ -64,12 +64,15 @@
   	</div>
 
 
+<div class="svgDiv">
+		<svg class="svgButton" onclick="leftButton()">
+				  <polygon points="0,15 20,0 20,7.5 60,7.5 60,22.5 20,22.5 20,30" style="fill:black;stroke:black;stroke-width:0" />
+		</svg>
 
-
-
-
-
-
+		<svg class="svgButton" onclick="rightButton()">
+				  <polygon points="60,15 40,0 40,7.5 0,7.5 0,22.5 40,22.5 40,30" style="fill:black;stroke:black;stroke-width:0" />
+		</svg>
+	</div>
 
 
 
@@ -106,6 +109,8 @@
 		var stckHeight = 3;
 		var stckWidth = 60;
 		var stck = (canvas.width-stckWidth) / 2;
+		var stckL;
+		var stckR;
 		var sagPad = false;
 		var solPad = false;
 
@@ -134,6 +139,8 @@
 		document.addEventListener("keydown", keyDownHandler, false);
 		document.addEventListener("keyup", keyUpHandler, false);				/* Keybord yön tuşları ve mouse ile kontrol için Event eklediğimiz kısım*/
 		document.addEventListener("mousemove", mouseMoveHandler, false);
+																				
+		
 
 		function mouseMoveHandler(e) 
 		{
@@ -345,6 +352,11 @@
 								{
 									dx = -dx;
 								}
+								else if ((x==110.1-R && y==69.99-R) || (x==110.1-R && y==70.11+4+R) || (x==110.1+55+R && y==69.99-R) || (x==110.1+55+R && y==70.11+4+R)) 
+								{
+									dx = -dx;
+									dy = -dy;
+								}
 			                	
 			                	else
 			                	{
@@ -413,6 +425,32 @@
 			    circle.closePath();
 			}
 
+		function leftButton()
+			{
+				stckL = stck;
+				if(stckL < 20)
+					{
+						stck = 0;
+					}
+				else
+					{
+						stck -= 20
+					}
+			}
+
+		function rightButton()
+			{
+				stckR = stck;
+				if(stckR > 220)
+					{
+						stck = 240;
+					}
+				else
+					{
+						stck += 20;
+					}
+			}
+
 		function draw() 
 		{
 			    circle.clearRect(0, 0, canvas.width, canvas.height);
@@ -439,7 +477,7 @@
 						if(x > stck - R && x < stck + stckWidth + R) 
 							{
 								var mutlak = Math.abs(dy);
-								if(mutlak <= 2.75)
+								if(mutlak <= 2.25)
 									{
 			        					dy = -(dy + vurusSpeed);
 			        				}
