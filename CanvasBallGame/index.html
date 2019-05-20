@@ -46,20 +46,7 @@
     				0% {margin-left: 0;}
     			}
 
-    		svg.svgButton
-    		{
-    			width: 60px;
-    			height: 30px;
-    			margin: 0 1.5vw;
-    		}
-
-    		.svgDiv
-    		{
-    			position: absolute;
-    			left: 50vw;
-    			bottom:10vh;
-    			transform: translate(-50%,50%);
-    		}
+    		
 
 
     </style>
@@ -77,18 +64,6 @@
 	<div style="position: absolute; left: 5vw; top: 5vh; margin-left: 0; width: 20vw;">
     	<a href="https://aykutceng.github.io/"><img class="geri" style="width:20%;" src="arrowleft.png"></a>
   	</div>
-
-
-<div class="svgDiv">
-		<svg class="svgButton" onclick="leftButton()">
-				  <polygon points="0,15 20,0 20,7.5 60,7.5 60,22.5 20,22.5 20,30" style="fill:black;stroke:black;stroke-width:0" />
-		</svg>
-
-		<svg class="svgButton" onclick="rightButton()">
-				  <polygon points="60,15 40,0 40,7.5 0,7.5 0,22.5 40,22.5 40,30" style="fill:black;stroke:black;stroke-width:0" />
-		</svg>
-	</div>
-
 
 
 	<script>
@@ -440,31 +415,6 @@
 			    circle.closePath();
 			}
 
-		function leftButton()
-			{
-				stckL = stck;
-				if(stckL < 20)
-					{
-						stck = 0;
-					}
-				else
-					{
-						stck -= 20
-					}
-			}
-
-		function rightButton()
-			{
-				stckR = stck;
-				if(stckR > 220)
-					{
-						stck = 240;
-					}
-				else
-					{
-						stck += 20;
-					}
-			}
 
 		function draw() 
 		{
