@@ -10,7 +10,8 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		min-height: 25vh;
+		min-height: 150px;
+		height: 25vh;
 		background-color: rgba(210,210,210,0.22);
 		margin:0;
 		padding: 0 0 1vh 0;
@@ -330,8 +331,23 @@ img.backImg:nth-child(3)
 		width: 100%;
 		background-color: #cfdfcf;
 		padding:7.5vh 5vw 2.5vh 5vw;
+		opacity: 0;
 
 	}
+
+.photoAreaMainAnimation
+	{
+		
+		animation: pama 2s 1;
+	}
+
+	@keyframes pama
+		{
+			0% {opacity: 0; margin-top:20vh;}
+			20% {opacity: 0.25; margin-top:16vh;}
+			50% {opacity: 1; margin-top:10vh;}
+			100% {opacity: 1; margin-top:0;}
+		}
 
 .photoArea
 	{
@@ -735,7 +751,7 @@ ul.bott li:nth-child(5) a:hover .fa {
 		
 	}
 
-.filteringLi:hover
+.filteringLi:hover , .filteringLi.activeFilt
 	{
 		transition: 0.2s;
 		transform: translate(8px,0);
@@ -754,6 +770,7 @@ ul.bott li:nth-child(5) a:hover .fa {
 		top:0;
 		padding: 0;
 		width: 85%;
+		align-content: center;
 	}
 
 .photosWhichFiltered
@@ -763,7 +780,188 @@ ul.bott li:nth-child(5) a:hover .fa {
 		padding:0;
 		margin-left: 4%;
 		margin-bottom: 2vh;
+		cursor: pointer;
 	}
+
+
+
+
+
+
+
+
+
+
+.portfolioPageMain
+	{
+		 background-repeat: no-repeat;
+		 background-attachment: fixed;
+		 background-size: cover;
+		 background-position: center;
+		 background-image:url("portfolioBG.jpg");
+		 position: relative;
+		 width: 100%;
+		 height: 98vh;
+		 min-height: 150px;
+		 box-sizing: content-box;
+		 top: 0;
+		 left: 0;
+		 font-family: Arial, Helvetica;
+		 letter-spacing: 0.02em;
+		  font-weight: 400;
+		 -webkit-font-smoothing: antialiased; 
+		 z-index: 1;
+		 margin: 0;
+		 padding: 0;
+		 margin-bottom: 2vh;
+	}
+
+
+.altPortfolio
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		background-color: rgba(255,40,0,.3)
+	}
+
+
+/* .blurred-box1
+	{
+		  position: relative;
+		  width: 20vw;
+		  height: 60vh;
+		  top: 19vh;
+		  left:60vw;
+		  background: inherit;
+		  border:none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+	}
+
+.blurred-box1:after
+	{
+		 content: '';
+		 width: 140%;
+		 height: 140%;
+		 background: inherit; 
+		 position: absolute;
+		 left: -20%;
+		 right: 0;
+		 top: -20%;  
+		 bottom: 0;
+		 border:none;
+		 margin: 0;
+		 padding: 0;
+		 box-shadow: inset 0 0 0 200px rgba(255,255,255,0.095);
+		 filter: blur(10px);
+	}
+
+
+.blurred-box2
+	{
+		  position: relative;
+		  width: 40px;
+		  height: calc(70% - 80px);
+		  top: 14vh;
+		  left: 20vw;
+		  background: inherit;
+		  border:none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+	}
+
+.blurred-box2:after
+	{
+		 content: '';
+		 width: 140%;
+		 height: 140%;
+		 background: inherit; 
+		 position: absolute;
+		 left: -20%;
+		 right: 0;
+		 top: -20%;  
+		 bottom: 0;
+		 border:none;
+		 margin: 0;
+		 padding: 0;
+		 box-shadow: inset 0 0 0 200px rgba(255,255,255,0.095);
+		 filter: blur(10px);
+	}
+
+
+.blurred-box3
+	{
+		  position: relative;
+		  width: 20vw;
+		  height: calc(70% - 80px);
+		  top: calc(-50% + 43px);
+		  left: 60vw;
+		  right: 0;
+		  background: inherit;
+		  border:none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+	}
+
+.blurred-box3:after
+	{
+		 content: '';
+		 width: 140%;
+		 height: 140%;
+		 background: inherit; 
+		 position: absolute;
+		 left: -20%;
+		 right: 0;
+		 top: -20%;
+		 bottom: 0;
+		 border:none;
+		 margin: 0;
+		 padding: 0;
+		 box-shadow: inset 0 0 0 200px rgba(255,255,255,0.095);
+		 filter: blur(10px);
+	}
+
+
+.blurred-box4
+	{
+		  position: relative;
+		  width: 60vw;
+		  height: 40px;
+		  top: calc(-50% + 43px) ;
+		  left:20vw;
+		  background: inherit;
+		  border:none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+	}
+
+.blurred-box4:after
+	{
+		 content: '';
+		 width: 140%;
+		 height: 140%;
+		 background: inherit; 
+		 position: absolute;
+		 left: -20%;
+		 right: 0;
+		 top: -20%;  
+		 bottom: 0;
+		 border:none;
+		 margin: 0;
+		 padding: 0;
+		 box-shadow: inset 0 0 0 200px rgba(255,255,255,0.095);
+		 filter: blur(10px);
+	}*/
+
+
+
+
+
 
 
 

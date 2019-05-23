@@ -7,6 +7,14 @@ $(document).ready(function(){
 			});
 
 
+	$('.filteringUl > li').each(function(){
+		$('.filteringUl > li').click(function(){
+			$('.filteringUl > li').removeClass('activeFilt');
+			$(this).addClass('activeFilt');
+		});
+	});
+
+
 
 	$('li#familyFilter').click(function(){
 		$('img#familyFiltered').each(function()
@@ -19,6 +27,11 @@ $(document).ready(function(){
 			});
 
 		$('img#modelFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+
+		$('img#workerFiltered').each(function()
 			{
 				$(this).css("display","none");
 			});
@@ -42,6 +55,11 @@ $(document).ready(function(){
 				$(this).css("display","none");
 			});
 
+		$('img#workerFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+
 	});
 
 
@@ -57,6 +75,36 @@ $(document).ready(function(){
 			});
 
 		$('img#modelFiltered').each(function()
+			{
+				$(this).css("display","inline-block");
+			});
+
+		$('img#workerFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+
+	});
+
+
+	$('li#workerFilter').click(function(){
+
+		
+		$('img#familyFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+		$('img#cosplayFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+
+		$('img#modelFiltered').each(function()
+			{
+				$(this).css("display","none");
+			});
+
+		$('img#workerFiltered').each(function()
 			{
 				$(this).css("display","inline-block");
 			});

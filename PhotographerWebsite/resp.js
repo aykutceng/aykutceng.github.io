@@ -34,6 +34,29 @@ $(document).ready(function ()
 		  			}
 			});
 
+
+		
+
+		
+				
+
+		
+
 		
 
 	});
+
+	var executed = false;
+	var inViewElement = document.getElementById('photoAreaMain');
+
+
+
+window.onscroll = function() 
+{	
+
+	if (window.pageYOffset > 100) 
+		{
+			inViewElement.classList.add("photoAreaMainAnimation");
+			setTimeout(function(){inViewElement.style.opacity = "1";},1500);	
+		}
+}
