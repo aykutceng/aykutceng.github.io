@@ -1,0 +1,1648 @@
+﻿
+
+body 
+{ 
+	/*background-image: linear-gradient(black,#322F2F,black);*/
+	
+	background-color: #2B2929;
+	
+
+/*---------------------------------------------- Responsive Navbar -----------------------------------------------*/
+
+}
+
+
+.headerLogo
+{
+  height: 100%;
+}
+
+
+.navbar-default
+{ 
+	height: 6vh;
+  border: 0;
+    
+  /*border-image: url(serit.png) 30 round;*/
+    
+  background: rgba(0,0,0,0);
+  /*background-color: black;*/
+  /*background-image: linear-gradient(grey,black);*/
+  /*background-image: url(serit.png); */
+  background-size: 100%;
+  z-index: 1000;
+	
+}
+
+
+.sticky .pull-left.navbar-toggle {
+  border:0 solid transparent;
+  
+  margin:0;
+  
+  padding: 1vh 1vw !important;
+  position: relative;
+  margin:1vh auto auto 2px;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+
+ {
+      border:0 solid transparent;
+ }
+
+
+
+
+.nav.navbar-nav.navbar-right
+{
+	width:30vw;
+	text-align: center;
+}
+
+.nav.navbar-nav.navbar-right li
+ {
+  text-align: center;
+	width:33.33%;
+	
+ }
+
+.nav.navbar-nav.navbar-right li.active,li.active
+ {
+   background-color: rgb(225,65,54);
+ }
+
+ .nav.navbar-nav.navbar-right li.active a,li.active a
+ {
+
+  background-color: #2B2929;
+  color:rgb(225,65,54);
+
+ }
+
+
+.nav.navbar-nav.navbar-right li a:hover, li a:hover,.nav.navbar-nav.navbar-right li a.active
+{
+	transform:translate(0px,2.2px);
+	color:rgb(225,65,54);
+	transition:0.20s;
+	
+}
+
+
+
+
+.container-fluid button
+{
+	border:0;
+	background:none;
+	text-decoration: none;
+	color:grey;
+	border-radius: 4px;
+
+}
+
+
+/*########################################## Responsive Navbar Sonu ##########################################*/
+
+
+
+.bottom
+  {
+  
+  width: 100%;
+  height: 14vh;
+  background-color:none;  
+  display:inline-block;
+  position: relative;
+  left:0;
+  right:0;
+  bottom: -300px;
+  top:5vh;
+
+  
+  opacity:0.5;
+  
+  }
+
+  .opclo
+  {
+  width: 100%;
+  height: 14vh;
+  background-color:rgba(0,0,0,0.8);  
+  display:none;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+
+  
+  
+  }
+
+
+
+/*----------------------------------------------Arrow Targeting Bottom-----------------------------------------------*/
+
+
+
+
+
+.fa-caret-up
+{
+margin-bottom:0px;
+padding-bottom:0px;
+font-size:160%;
+text-align: center;
+
+color:grey;
+transition:0.2s;
+position:fixed;
+bottom:0;
+right: 0;
+z-index:100;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+background: rgba(0,0,0,.7);
+height: 25px;
+width: 40px;
+
+
+
+
+
+
+
+}
+
+.fa-caret-up:hover
+{
+
+color:gold;
+transition:0.2s;
+
+}
+
+
+
+/*########################################## Arrow Targeting Bottom End ##########################################*/
+
+
+/*---------------------------------------- Navbar Position ----------------------------------------*/
+
+
+.normalPos
+{
+	position:absolute;
+	top:10vh;
+	width:100%;
+	height: 6vh;
+  border: 0px solid rgb(225,45,34);
+	border-bottom-width: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6vh;
+  z-index: 1000;
+  border: 0px solid rgb(225,45,34);
+  border-bottom-width: 5px; 
+}
+/*#####################################################Navbar Position End#####################################################*/
+
+/*----------------------------------------SLideShow----------------------------------------*/
+
+.bg1
+  { 
+    position: relative;
+      width: 100%;
+    
+  }
+
+.midd
+  {
+    
+    width:100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.45);
+    top:0%;
+    left:0%;
+    right:0%;
+    bottom:0%;
+  }
+
+
+.bg1Text
+
+  { 
+      width:100%;
+      height: 75vh;
+      text-align: justify;
+      color: white;
+      margin:0;
+      padding: 30vh 15vw 0 15vw;
+
+  }
+
+.bg1Text h1 
+
+    {
+      text-align:center;
+      padding: 0;
+      margin-top:0;
+      font-size:2vw;
+    }
+
+
+  p.textKlasik
+  {
+
+    
+    
+    margin:5vh 0 0 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size:1.5vw;
+    
+ 
+  }
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+.mySlides 
+{
+  display: none;
+}
+img.slideee 
+  {   
+      
+      padding:0;
+      vertical-align: middle;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height:75vh;
+      opacity:0.7;
+      display: block;
+      
+      
+     
+
+      
+  }
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  margin: auto;
+  
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: gold;
+}
+
+/* Fading animation */
+
+.fadeUp
+{
+  
+  -webkit-animation: fadeUp 0.2s;
+  animation: fadeUp 0.2s;
+
+}
+ 
+ @-webkit-keyframes fadeUp 
+ {
+  from {bottom:-14vh}
+  to {bottom:0vh}
+ }
+
+ @keyframes fadeUp
+ {
+  from {bottom:-14vh}
+  to {bottom:0vh}
+ }
+
+ .fadeDown
+{
+  
+  -webkit-animation: fadeDown 0.2s;
+  animation: fadeDown 0.2s;
+
+}
+ 
+ @-webkit-keyframes fadeDown 
+ {
+   
+  from {bottom:0;}
+  to {bottom:-14vh;}
+
+ }
+
+ @keyframes fadeDown 
+ {
+  
+    from {bottom:0; display:inline-block;}
+  to {bottom:-14vh; display:none;}
+
+ }
+
+
+.fade {
+  opacity:1;
+  -webkit-animation: fade 1.5s ;
+  animation:fade 1.5s  ;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+
+
+
+/*#####################################################  SLIDESHOW SONU #####################################################*/
+
+/*---------------------------------------------------- Çalışma Yöntemi ----------------------------------------------------*/
+
+
+.calıs
+{
+  width: 100%;
+  
+  background-color:none;  
+  display:inline-block;
+  position: relative;
+  top:1vh;
+  left:0px;
+  right:0px;
+  
+}
+
+.calısDıs
+{
+  width: 100%;
+  display:block;
+ 
+  
+  position:relative;
+}
+
+
+
+.calısIc
+{
+    display:inline-block;
+    opacity:0;
+    width:90%;
+    margin:0 5%;
+    position: absolute;
+    background-color:rgba(0,0,0,0);
+    top:0%;
+    left:0%;
+    right:0%;
+    bottom:0%;
+    
+    transition: 0.5s;
+}
+
+.calısDıs:hover .calısIc
+
+{
+  
+  opacity:1;
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transition: 0.5s;
+ 
+}
+
+.calısmaKutu
+{
+    
+    
+    color: white;
+    padding: 4% 0 0 0 ;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    
+}
+
+.calısmaKutu h3
+  {
+    font-size:1.3vw;
+  }
+
+
+
+
+p.calısmaText
+{
+    vertical-align: text-middle;
+    text-align:center;
+    margin: 0;
+    padding:0;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size:1vw;
+    font-weight:1500;
+}
+
+.calısma
+{ display:block;
+  
+  margin:3vh 0;
+  padding:0;
+  width:20%;
+  opacity:1;
+   transition: 0.4s;
+}
+
+.calısDıs:hover img.calısma
+
+{
+  opacity:0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+ transition: 0.4s;
+}
+
+/*#####################################################  Çalışma Yöntemi Sonu #####################################################*/
+
+
+
+
+
+
+/*---------------------------------------------------- ÖZET ----------------------------------------------------*/
+.polaroid
+{
+  
+  width: 100%;
+  margin-top: 10vh;
+  height: 85vh;
+  display: block;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 1);
+}
+
+  .polaroid1
+{
+  
+  margin-top: 10vh;
+  height: 85vh;
+  display: block;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 1);
+}
+
+
+
+div.özetText
+{
+  text-align: center;
+  text-align-last:center; 
+  font-family: "Times New Roman", Times, serif;
+  
+  margin: 0;
+  padding:5% 3% 0 3%;
+  color:white;
+  background: rgba(10,10,10,0.7);
+  height:50vh;
+  text-decoration: none;
+
+}
+
+div.özetText > a 
+{
+  text-decoration: none;
+  
+}
+
+div.özetText h1
+
+{
+  
+  color:white;
+  text-align: center;
+}
+
+div.özetText h1:hover
+
+{
+  
+  color:gold;
+  text-align: center;
+}
+
+img.özet
+{
+  height:35vh;
+  width:100%;
+  object-fit: cover;
+  top:0;
+  margin:0;
+  padding-right: 0;
+  transition:0.6s;
+}
+
+
+
+.resimüstü , .resimüstü1
+
+{
+  width:90%;
+  
+  background: rgba(0,0,0,0);
+  text-align: center;
+  padding:15% 0;
+  font-size:1.25em;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition:0.6s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+
+.polaroid div.ulas
+
+{
+   position: absolute;
+    top: 75vh;
+    left: 15%;
+   
+  color:red;
+  padding-top:2.5vh;
+  width:70%;
+  height: 10vh;
+  border:1px solid red;
+  border-radius: 5px;
+  background:rgba(0,0,0,0.7);
+  font-size:1.5em;
+  opacity:0;
+  z-index: 150;
+  transition:0.6s;
+
+}
+
+.polaroid1 div.ulas
+
+{
+   position: absolute;
+    top: 75vh;
+    left: 15%;
+   
+  color:red;
+  padding-top:2.5vh;
+  width:70%;
+  height: 10vh;
+  border:1px solid red;
+  border-radius: 5px;
+  background:rgba(0,0,0,0.7);
+  font-size:1.5em;
+  opacity:0;
+  z-index: 150;
+  transition:0.6s;
+
+}
+
+.polaroid div.bilgi
+{
+	top:10vh;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	bottom:0;
+	display:block;
+	position:absolute;
+	opacity:1;
+	transition:0.6s;
+	
+
+}
+
+.polaroid1 div.bilgi
+{
+	top:10vh;
+	
+	margin: 0;
+	padding: 0;
+	bottom:0;
+	display:block;
+	position:absolute;
+	opacity:1;
+	transition:0.6s;
+	
+
+}
+
+
+/***************özet cover **************/
+
+
+
+img.özetCover
+
+{
+	height: 85vh;
+	width:100%;
+	object-fit:cover;
+	margin:0;
+	padding:0;
+	display:block;
+  position:relative;
+  opacity: 0;
+  
+	
+	
+	transition:0.6s;
+
+}
+
+
+
+/***************özet cover **************/
+
+div.polaroid:hover img.özetCover , div.polaroid1:hover img.özetCover
+
+{
+	
+  
+	transition:0.6s;
+	opacity:1;
+	
+}
+
+div.polaroid:hover div.resimüstü , div.polaroid1:hover div.resimüstü1
+
+{
+    
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding:15% 0;
+  
+  color:white;
+  position:absolute;
+  transition:0.6s;
+
+    opacity:1;
+    
+
+
+}
+
+
+div.polaroid:hover div.ulas , div.polaroid1:hover div.ulas
+
+{
+  opacity:1;
+  transition:0.6s;
+  
+}
+
+div.polaroid:hover div.ulas:hover 
+{
+
+  position: absolute;
+    top: 75vh;
+    left: 15%;
+    
+    transform: scale(1.1,1.1);
+  color:red;
+  padding-top:2.5vh;
+  width:70%;
+  height: 10vh;
+  border:1px solid red;
+  
+
+  background:rgba(0,0,0,0.8);
+  font-size:1.5em;
+  z-index: 150;
+  transition:0.6s;
+
+}
+
+div.polaroid1:hover div.ulas:hover
+
+{
+
+  position: absolute;
+    top: 75vh;
+    left: 24%;
+    
+    transform: scale(1.1,1.1);
+  color:red;
+  padding-top:2.5vh;
+  width:52%;
+  height: 10vh;
+  border:1px solid red;
+  border-radius: 5px;
+  background:rgba(0,0,0,0.8);
+  font-size:1.5em;
+  z-index: 150;
+  transition:0.6s;
+
+}
+
+
+
+
+
+div.polaroid:hover div.bilgi , div.polaroid1:hover div.bilgi
+
+{
+	display:block;
+	opacity:0;
+	margin: 0;
+	transition:0.6s;
+	height:85vh;
+}
+
+div.polaroid:hover div.bilgi img.özet , div.polaroid1:hover div.bilgi img.özet
+
+{
+  height: 0vh;
+  transition:0.6s;
+}
+
+
+
+
+
+/*################################################# ÖZET SONU ##################################################*/
+
+
+
+/*############################################# YAZILIM SAYFASI #########################################*/
+
+
+h1.yazılımBaslık
+
+{
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  color:#FF4136;
+  font-size: 3em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+h2.yazılımBaslık
+
+{
+
+  color:white;
+  font-size:1.5em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+
+}
+
+p.yazılımText
+
+{
+  color:white;
+  font-size:1.3em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+p.yazılımTextMadde
+
+{
+  color:white;
+  font-size:1.1em;
+  
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  
+}
+
+
+
+div.yazılımBox
+	{
+		background-color:rgba(0,0,0,0.5);
+		background-image: url('özetüstü.jpg');
+		background-attachment: cover;
+		background-size: 150% auto;
+		height: 35vh;
+		width:80%;
+		position:relative;
+		display: inline-block;
+		border-radius: 15px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+		margin-top:5vh;
+		box-shadow: 1px 6px 12px 1px rgba(0, 0, 0, 0.8), 3px 9px 30px 3px rgba(0, 0, 0, 1);
+
+	}
+
+	
+
+img.yazılımImg
+	{
+		height:35vh;
+		width:100%;
+		object-fit: cover;
+		opacity: 0;
+		transition: .6s;
+		border-radius: 50%;
+		transform: scale(0,0);
+
+	}
+
+div.yazılımBaslıkBox
+	{
+		position:absolute;
+		background: rgba(0,0,0,0.7);
+		top:50%;
+		left:50%;
+		width:70%;
+		transform: translate(-50%,-50%);
+		border:1px solid red;
+		color:red;
+		font-size: 1.5em;
+		font-weight: 700;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+		opacity:1;
+		box-shadow: 2px 8px 15px 2px rgba(0, 0, 0, 1), 5px 12px 40px 5px rgba(0, 0, 0, 0.8);
+	}
+
+span.yazılımTextBox1, span.yazılımTextBox2, span.yazılımTextBox3
+	{
+		
+		position:relative;
+		background: rgba(0,0,0,0.4);
+		
+		width:350%;
+		
+		border-radius: 10px;
+		color:white;
+		font-size: 1.2em;
+		font-weight: 500;
+		opacity:1;
+		z-index: 10;
+		top:0;
+		display:none;	
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    
+		opacity: 0;
+		
+    margin:0;
+
+
+    
+   
+		padding: 10% 8%;
+		text-align: justify;
+		
+		box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.6), 2px 10px 15px 2px rgba(0, 0, 0, 0.3);
+
+    -webkit-animation: yazılımText 0.4s;
+    animation: yazılımText 0.4s;
+	}
+
+  span.yazılımTextBox1
+  {
+    left: 0%;
+  }
+
+  .yazılımTextBox1::after
+  {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 13%;
+    margin-left: -5px;
+    border:12px solid;
+
+    border-color:  transparent transparent rgba(0,0,0,0.4) transparent;
+  }
+
+
+
+  span.yazılımTextBox2
+  {
+    left:-125%;
+  }
+
+  .yazılımTextBox2::after
+  {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border:12px solid;
+    border-color:  transparent transparent rgba(0,0,0,0.4) transparent;
+  }
+
+
+
+  span.yazılımTextBox3
+  {
+    left:-250%;
+  }
+
+  .yazılımTextBox3::after
+  {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right:  13%;
+    margin-left: -5px;
+    border:12px solid;
+    border-color:  transparent transparent rgba(0,0,0,0.4) transparent;
+  }
+
+	div.yazılımBox:hover span.yazılımTextBox1, div.yazılımBox:hover span.yazılımTextBox2, div.yazılımBox:hover span.yazılımTextBox3
+
+		{
+      display: block;
+      opacity: 1;
+      top:5vh;
+
+      
+
+		}
+    
+   
+ 
+ @-webkit-keyframes yazılımText 
+ {
+  from {opacity:0; transform: scale(0,0);}
+  to {opacity:1; transform: scale(1,1);}
+ }
+
+ @keyframes yazılımText
+ {
+  from {opacity:0; transform: scale(0,0);}
+  to {opacity:1; transform: scale(1,1);}
+ }
+
+
+    
+
+
+		div.yazılımBox:hover .yazılımImg
+		{
+				
+				opacity:1;
+				transition: .4s;
+				transform: scale(1,1);
+        border-radius: 15px;
+
+		}
+
+
+    li.yazılımList
+    {
+      color:white;
+      font-size: 1em;
+      padding:1vh 1vw;
+      margin:0;
+    }
+
+
+
+    /*######################### platform #######################*/
+
+    .modal
+    {
+      display:none;
+      position:fixed;
+      z-index:150;
+      width: 100%;
+      height: 100%;
+      top:0%;
+      left:0%;
+      padding-top:5vh;
+      overflow:none;
+      background-color: rgba(0,0,0,0.9);
+    }
+    #platformText {
+        background-color: rgba(10,10,10,0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding:5vh 5vw;
+
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        animation-name: opacity;
+        animation-duration: 2s;
+
+      }
+
+      @-webkit-keyframes opacity 
+{
+    from {-webkit-opacity:0;} 
+    to {-webkit-opacity:1;}
+}
+
+@keyframes opacity  
+{
+    from {opacity:0;} 
+    to {opacity:1;}
+}
+
+
+      #platformImg {    
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+@-webkit-keyframes zoom 
+{
+    from {-webkit-transform:scale(0,0)} 
+    to {-webkit-transform:scale(1,1)}
+}
+
+@keyframes zoom 
+{
+    from {transform:scale(0,0)} 
+    to {transform:scale(1,1)}
+}
+
+
+      .closeModal
+      {
+
+          position:absolute;
+          top:3vh;
+          right:3vw;
+          color:white;
+          font-size:2em;
+          font-weight: bold;
+
+
+      }
+
+/*######################### platform sonu #######################*/
+
+
+
+/*########################################################################################### YAZILIM SAYFASI #######################################################################################*/
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ güvenlik sayfası @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+h2.güvenlikBaslık
+
+{
+
+  color:#FF4136;
+  font-size:1.5em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+
+}
+
+.guv
+{
+  width: 100%;
+  display:block;
+  transition: 0.5s;
+}
+
+.guvenlikText
+{
+  
+  position: relative;
+  
+  text-align: justify;
+  font-size: 1em;
+  color:white;
+  margin: 5vh 0vw 8vh 0vw;
+
+}
+
+.closeGuv
+      {
+
+          position:absolute;
+          top:10vh;
+          right:1vw;
+          color:white;
+          font-size:1.5em;
+          font-weight: bold;
+
+
+      }
+
+      .divGuv
+
+      {
+          height: auto;
+          width: 100%; 
+          background-color: rgba(0,0,0,0.4);
+          padding: 1vh 2vw;
+          margin-bottom: 1vh;
+          
+
+      }
+
+
+      img.guv1
+
+      {
+        display:block;
+        width:80%; 
+        box-shadow: 2px 10px 10px 2px rgba(0,0,0,0.9);
+        margin:0 10% 2vh 0;
+      }
+
+      img.guv
+
+      {
+        display:block;
+        position: relative;
+        width:70%; 
+        box-shadow: 2px 10px 10px 2px rgba(0,0,0,0.9);
+        margin:-5vh 8vw 0 4vw;
+      }
+
+
+
+      .ulGuv
+      {
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+      }
+
+
+      .liGuv
+      {
+        color:white;
+        font-size:1.1em;
+        margin-bottom:2vh;
+
+      }
+
+
+
+      img.whichPlatformIMG
+      {
+        padding:0; 
+        margin:5vh 5% 5vh 5%; 
+        object-fit:cover; 
+        height:30vh; 
+        width:90%; 
+        cursor:pointer;
+        box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.8);
+        filter: blur(2px);
+        transition: .4s;
+      }
+
+
+      img.whichPlatformIMG:hover
+
+      {
+        padding:0; 
+        margin:5vh 5% 5vh 5%; 
+        object-fit:cover; 
+        height:30vh; 
+        width:90%; 
+        cursor:pointer;
+        box-shadow: 0px 4px 6px 2px rgba(150,10,10,0.8);
+        filter: blur(0px);
+        transform: scale(1.1,1.1);
+        transition: .4s;
+      }
+
+
+
+      .rowGüv
+      {
+        display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+      }
+
+      
+
+      .bölGüv
+
+      {
+        -ms-flex:50%;  
+        flex: 50%;
+        max-width: 50%;
+        padding-bottom: 2vh;
+      }
+
+      .bölGüv2
+      {
+        -ms-flex:30%;  
+        flex: 30%;
+        max-width: 30%;
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+      }
+
+      .bölGüv3
+      {
+        -ms-flex:70%;  
+        flex: 70%;
+        max-width: 70%;
+        padding:0 2vw 2vh 2vw;
+      }
+
+      .bölGüv1
+
+      {
+        -ms-flex:100%;  
+        flex: 100%;
+        max-width: 100%;
+        padding-bottom: 2vh;
+      }
+
+      @media screen and (max-width: 600px)
+      {
+        .bölGüv
+
+      {
+        -ms-flex:100%;  
+        flex: 100%;
+        max-width: 100%;
+        padding-bottom: 2vh;
+      }
+      .bölGüv2
+
+      {
+        -ms-flex:100%;  
+        flex: 100%;
+        max-width: 100%;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+      }
+      .bölGüv3
+
+      {
+        -ms-flex:100%;  
+        flex: 100%;
+        max-width: 100%;
+        padding-bottom: 2vh;
+      }
+      }
+   
+
+
+
+
+    
+   
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ güvenlik sayfası sonu @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+/* ==================================== Google Maps ===============================*/
+
+
+
+#map
+  {
+    border: 0;
+    height: 27vh;
+    width: 50%;
+    transition: 1.5s;
+  }
+
+
+  
+
+
+  .mapIm
+  {
+  	width:1.5vw;
+  	bottom:0;
+  	left:50%;
+  	transform: translate(0%,-125%);
+  	z-index: 10;
+  	cursor: pointer;
+    background-color: rgb(78,58,78);
+    border-radius:50%;
+  }
+
+  
+
+
+/* ==================================== Google Maps Sonu ===============================*/
+
+/* ==================================== iletişim Formu ===============================*/
+
+.adres
+{
+	box-shadow: 3px 3px 10px 3px rgba(0,0,0,1);
+	height: 34vh;
+	margin-top: 5vh;
+	margin-right: 2vw;
+	margin-bottom: 5vh;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 5px;
+	
+}
+
+
+.ilMail
+{
+    text-decoration: none;
+    color: rgba(255, 65, 54,0.8);
+}
+
+.ilMail:hover
+
+{
+  text-decoration: none;
+    color: rgba(255, 65, 54,1);
+}
+
+.adresBaslık
+{
+    color:white;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding:0 1vw;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.adresText
+{
+  color:white;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  padding:0 2vw;
+  text-decoration: none;
+}
+
+
+.ulaşResim
+{
+	width: 100px;
+	float: left;
+	margin-right: 0;
+}
+
+.adresIm
+{
+	width: 100%;
+	height: 34vh;
+	left:0;
+	object-fit: cover;
+	position:absolute;
+	margin-top: 1vh;
+	top:-1vh;
+	box-shadow: 0px -1px 7px 0px rgba(0,0,0,1);
+	border-radius: 5px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+
+
+
+.ilForm
+  {
+          background-color: rgba(255,65,54,0.9);
+          width: 100%;
+          height: 10vh;
+          padding: auto;
+          border:none;
+          margin-top:10vh;
+          margin-bottom:2vh;
+          border-radius: 20px;
+          box-shadow: 6px 6px 20px 2px rgba(0,0,0,0.9);
+          
+
+  }
+
+  .ilForm::after
+  {
+    content: "";
+    border:8px solid;
+    border-color: rgba(255,65,54,0.9) transparent transparent transparent;
+    position:absolute;
+    top:100%;
+    left:50%;
+    
+  }
+
+  h3.iletişim
+{
+  
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  
+
+}
+
+
+.formluk
+{
+    margin-top:2vh;
+    border-radius: 5px;
+    background-image: url(telefon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding:5%;
+    box-shadow: 6px 6px 20px 2px rgba(0,0,0,0.9);
+
+
+}
+
+label
+{
+      color:white;
+}
+
+
+
+
+input[type=text], textarea ,input[type=email]
+{
+  width:100%;
+  border:1px solid #ccc;
+  border-radius:5px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.9) ;
+  margin-top:1vh;
+  margin-bottom:3vh;
+  resize: vertical;
+  padding:1%;
+}
+
+input[type=submit] , input[type=reset] {
+    background-color: rgba(255, 65, 54,0.9);
+    color: white;
+    padding: 2vh 2vw;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.9) ;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2em;
+    width: 30%;
+    margin-right: 1vw;
+    
+    transition: .2s;
+}
+
+input[type=submit]:hover , input[type=reset]:hover
+{
+  
+  background-color: red;
+  transition: .2s;
+  
+}
+
+
+/* ==================================== iletişim Formu Sonu ===============================*/
+
+/* ================================== Loading Icon ================================== */
+#loadMain{
+  height: 100vh;
+  width: 100%;
+  background-color: #2b2929;
+}
+#loadico{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("loadingico_spinnerGrey.gif") no-repeat center center #2b2929
+}
+
+
+
+::-webkit-scrollbar{
+  background: rgba(112,128,144,0.2);
+  width:10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(112,128,144, 0.6);
+  border-radius: 2px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(112,128,144, 0.7);
+  }
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(112,128,144,85);
+  }
+
+
+::scrollbar{
+  background: rgba(112,128,144,0.7);
+  width:10px;
+}
+
+::scrollbar-thumb {
+  background: rgba(112,128,144, 0.85);
+  border-radius: 2px;
+  }
+::scrollbar-thumb:hover {
+    background: rgba(112,128,144, 0.);
+  }
+
+::scrollbar-thumb:active {
+    background: rgba(112,128,144,1);
+  }
+
+.hizmetler{
+  color:#477878;
+}
+
+h2.hizmetler:hover{
+  cursor: pointer;
+}
+
+.guvH{width: 100%;min-width: 250px;float: left;margin-right: 1vw; }

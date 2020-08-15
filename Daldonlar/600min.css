@@ -1,0 +1,195 @@
+@media (max-width: 768px) 
+{
+  .navbar-nav
+	{
+		margin:0;
+		
+	}
+
+	.container-fluid
+
+	{
+			padding:0;
+			margin: 0;	
+	}
+
+	.navbar-collapse
+
+	{
+		padding:0;
+	}
+
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    width: 80vw;
+}
+	.nav.navbar-nav.navbar-right li
+	{
+		width:100%;
+	}
+
+
+ .navbar-nav > li
+
+ 	{		margin:0;
+ 			width:80vw;
+  			border-bottom:0.1px solid grey;	
+  			padding:7% 0 3% 0;
+  	}
+
+  	
+
+  .navbar-nav > li:last-child
+
+  	{		margin:0;
+  			width:80vw;
+  			border-bottom:none;
+  			padding:3% 0 7% 0;
+  	}
+
+
+	.navbar-nav > li > a 
+	{
+	
+    
+    width: 100%;
+    font-size: 0.9em;
+    margin:0px;
+    
+    
+	}
+  .navbar-nav > li > div 
+  {
+    
+    
+    width: 100%;
+    font-size: 0.9em;
+    margin:0px;
+    
+
+  }
+
+
+
+  ul.nav.navbar-nav.navbar-right
+  	{	
+  			
+  			width:70%;
+  			background: rgba(0,0,0,0.9);
+  	}
+
+  ul.nav.navbar-nav.navbar-right > li
+  	{
+  			
+  			
+  			
+  			text-align: left;
+  			
+  	}
+
+  
+	.nav.navbar-nav.navbar-right li  a , li a
+	{
+	text-align:left;
+	text-decoration: none;
+	font-family:"Times New Roman";
+	font-weight:600;
+	font-size:0.95em;
+	color:grey;
+
+	
+	}
+
+
+
+
+	.imgpad
+	{
+		margin: 1% 0% 4% 0%;
+		padding:0% 0% 0% 0%;
+		opacity:0.5;
+		width:30px;
+		height: auto;
+		transition: 0.20s;
+	}
+
+	.col-xs-6.col-lg-4.align-self-center a img.imgpad:hover
+	{
+		opacity:1;
+		
+		transform: scale(1.2,1.2);
+		transition: 0.20s;
+	}
+
+	p.bottomMedia
+	{	
+		margin:0;
+		padding:0;
+		color:grey;
+		text-align: center;
+		font-size: 0.85em;
+	}
+	p.bottomMedia:before
+	{	
+		content:"Follow us";
+	}
+
+	.col-xs-1{padding:0px;width:8.33%;}
+	.col-xs-2{padding:0px;width:16.66%;}
+	.col-xs-3{padding:0px;width:25%;}
+	.col-xs-4{padding:0px;width:33.33%;}
+	.col-xs-5{padding:0px;width:41.66%;}
+	.col-xs-6{padding:0px;width:50%;}
+	.col-xs-7{padding:0px;width:58.33%;}
+	.col-xs-8{padding:0px;width:66.66%;}
+	.col-xs-9{padding:0px;width:75%;}
+	.col-xs-10{padding:0px;width:83.33%;}
+	.col-xs-11{padding:0px;width:91.66%;}
+	.col-xs-12{padding:0px;width:100%;}
+
+	.header 
+	{
+  		border: 0;
+ 
+  		background-color:black;
+ 		background-image: url('daldonlar.png'),url('baloncuk.png'),url('moon.png');
+  		background-size:27.5% auto,50% auto,37% auto;
+  		background-repeat: no-repeat,no-repeat,no-repeat;
+ 		background-position: center,left,right;
+ 		width:100%;
+ 		height:16vh;
+ 		top:0;
+ 		margin: 0;
+  		padding: 0;
+  
+	}
+
+
+		.polaroid1
+{
+  
+  width: 100%;
+  
+}
+
+	
+	div.özetText
+{
+  
+  font-size:0.8em;
+  
+}
+div.özetText h1
+
+{
+	font-size:2em;
+	
+}
+
+
+
+}
+
+
+
