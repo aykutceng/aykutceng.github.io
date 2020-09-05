@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <title>Travel</title>
+  <!--stylesheet-->
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <link href="styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <!--scripts-->
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/all-plugins.js"></script>
+  <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript">
+    $(document).ready(function(){var f=$("section").eq(0);$('html, body').animate({scrollTop: f.offset().top},1);})
+    $(window).on('load',function() {
+
+      var x = 0;
+      var a = $("section");
+      var b;
+      var i = 6;
+      var j=0;
+
+      var y  = window.pageYOffset;
+      $(document).on('scroll',function(){
+          y  = window.pageYOffset;
+          if(y > x){
+            if(j < i-1){j = j+1;}
+            b = a.eq(j); 
+            $('html, body').animate({scrollTop: b.offset().top},1000)
+          }
+          else{
+            if (j >0){j = j-1;}
+            b = a.eq(j);
+            $('html, body').animate({scrollTop: b.offset().top},1000)
+          }
+          x = y;
+        
+        
+      });
+    });
+  </script>-->
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <div class="logo">
+    <i class="fa fa-plane" aria-hidden="true"><span>Travel</span></i>
+  </div>
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="smooth-scroll" href="#Header"></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#About">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Services">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Testimonials">Testimonials</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Header Starts -->
+  <section id="Banner" class="content-section" style="background: url('images/mainBG.jpg') rgba(0,0,0,0.5) no-repeat fixed center; background-size: cover; background-blend-mode: multiply;">
+    <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner">
+      <div class="overlay"></div>
+      <div class="gtco-container">
+        <div class="row">
+          <div class="col-md-12 col-md-offset-0 text-left">
+            
+
+            <div class="row">
+              <div class="col-md-7 animated animatedFadeInRight fadeInRight">
+                <h1 align="center" class="sec1">SEYAHATİNİZ BİZİMLE DAHA KOLAY VE DAHA HIZLI!</h1> 
+              </div>
+              <div class="col-md-4 animated animatedFadeInUp fadeInUp">
+                <div class="form-wrap">
+                  <div class="tab">
+                    
+                    <div class="tab-content">
+                      <div class="tab-content-inner active" data-content="signup">
+                        <h3>Rezervasyon</h3>
+                        <form action="#">
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="fullname">Your Name</label>
+                              <input type="text" id="fullname" class="form-control">
+                            </div>
+                          </div>
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="activities">Activities</label>
+                              <select name="#" id="activities" class="form-control">
+                                <option value="">Activities</option>
+                                <option value="">Hiking</option>
+                                <option value="">Caving</option>
+                                <option value="">Swimming</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="destination">Destination</label>
+                              <select name="#" id="destination" class="form-control">
+                                <option value="">Philippines</option>
+                                <option value="">USA</option>
+                                <option value="">Australia</option>
+                                <option value="">Singapore</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="date-start">Date Travel</label>
+                              <input type="text" id="date-start" class="form-control">
+                            </div>
+                          </div>
+
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                            </div>
+                          </div>
+                        </form> 
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!-- Header Ends -->
+  <!-- About Us Starts -->
+  <section id="About" class="content-section">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="block-heading">
+            <h2>Hakkımızda</h2>
+          </div>
+          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Starts -->
+  <section id="Services" class="content-section text-center">
+    <div class="container">
+      <div class="block-heading">
+        <h2>Transfer Bölgelerimiz</h2>
+        <p>Güvenilir VIP Transfer Hizmetimiz Daima Yanınızda</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box">
+            <div class="service-icon yellow">
+              <div class="front-content">
+                <h3>Marmaris</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Marmaris</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box">
+            <div class="service-icon orange">
+              <div class="front-content">
+                <h3>Fethiye</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Fethiye</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box ">
+            <div class="service-icon red">
+              <div class="front-content">
+                <h3>Bodrum</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Bodrum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box">
+            <div class="service-icon grey">
+              <div class="front-content">
+                <h3>Fethiye</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Fethiye</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box">
+            <div class="service-icon grey">
+              <div class="front-content">
+                <h3>Fethiye</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Fethiye</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box">
+            <div class="service-icon grey">
+              <div class="front-content">
+                <h3>Fethiye</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Fethiye</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-section text-center" id="Portfolio">
+    <div class="container">
+      <div class="block-heading">
+        <h2>Galeri</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio-wrapper clearfix">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-two.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-two.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-two.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-three.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-four.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-four.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-five.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-six.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">
+          <div class="content hover-cont-wrap">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="images/p-three.jpeg">
+            <div class="content-details fadeIn-bottom">
+              <h5 class="p-title">Title</h5>
+              <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="zoom"><i class="fa fa-search-plus"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS -->
+  <section id="Testimonials" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="block-heading">
+            <h2>Araçlarımız</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div id="customers-testimonials" class="owl-carousel">
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+              <div class="testimonial-name">Araç 1</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+              </div>
+              <div class="testimonial-name">Araç 2</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+              </div>
+              <div class="testimonial-name">Araç 3</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
+              </div>
+              <div class="testimonial-name">Araç 4</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
+              </div>
+              <div class="testimonial-name">Araç 5</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
+              </div>
+              <div class="testimonial-name">Araç 6</div>
+            </div>
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/araba.jpg" alt="">
+                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+              </div>
+              <div class="testimonial-name">Araç 7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF TESTIMONIALS -->
+  <section id="Contact" class="content-section">
+    <div class="container">
+      <div class="block-heading">
+        <h2>İletişim</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="contact-wrapper">
+            <div class="address-block border-bottom">
+              <h3 class="add-title">Merkez</h3>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="c-info">&nbsp;Muğla/Marmaris, TÜRKİYE</span>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="c-info">+90 599 456 78 98</span>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="c-info">email@yourdomain.com</span>
+              </div>
+            </div>
+            <div class="address-block">
+              <h3 class="add-title">Şube</h3>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="c-info">&nbsp;Eskişehir/Tepebaşı, TÜRKİYE</span>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="c-info">+90 599 456 78 99</span>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="c-info">email@yourdomain.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="form-wrap">
+            <form id="my-form" action="https://formspree.io/mdolqjvb" method="post">
+              <div class="fname floating-label">
+                <input type="text" class="floating-input" name="İsim" />
+                <label for="title">İsim</label>
+              </div>
+              <div class="fname floating-label">
+                <input type="text" class="floating-input" name="Soyisim" />
+                <label for="title">Soyisim</label>
+              </div>
+              <div class="email floating-label">
+                <input type="email" class="floating-input" name="Email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="contact floating-label">
+                <input type="tel" class="floating-input" name="Cep Telefonu" />
+                <label for="email">GSM</label>
+              </div>
+              <div class="company floating-label">
+                <input type="text" class="floating-input" name="İleti" />
+                <label for="email">İleti</label>
+              </div>
+              <div class="submit-btn">
+                <button id="my-form-button" type="submit">Gönder</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="my-form-status" align="center"></div>
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="javascript:void(0)">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
+      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk">Position2</p>
+    </div>
+  </footer>
+  <script>
+      
+
+
+    window.addEventListener("DOMContentLoaded", function() {
+
+      // get the form elements defined in your form HTML above
+      
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+      var closer = document.getElementById("close");
+      var htmlS = "Mailiniz Başarı ile Gönderildi!<span id='close'>&times</span>";
+      var htmlF = "Bir Hata Oluştu!<span id='close'>&times</span>";
+
+      // Success and Error functions for after the form is submitted
+      
+      function success() {
+        form.reset();
+        button.style.display = "none";
+        status.style.display = "block" ;
+        status.innerHTML = htmlS;
+      }
+
+      function error() {
+        status.style.display = "block";
+        status.innerHTML = htmlF;
+      }
+
+
+      // handle the form submission event
+
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+
+      status.addEventListener("click", function(ev) {
+        ev.preventDefault();
+        status.style.display = "";
+      });
+
+
+
+    });
+    
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+
+
+
+  </script>
+</body>
+
+</html>
