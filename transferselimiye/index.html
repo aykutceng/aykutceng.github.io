@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-  <title>Travel</title>
+  <link rel="icon" type="image/png" href="images/AdsızIco.png" />
+  <title>Selimiye Transfer</title>
   <!--stylesheet-->
 
 
@@ -30,71 +29,38 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!--<script type="text/javascript">
-    $(document).ready(function(){var f=$("section").eq(0);$('html, body').animate({scrollTop: f.offset().top},1);})
-    $(window).on('load',function() {
+    
 
-      var x = 0;
-      var a = $("section");
-      var b;
-      var i = 6;
-      var j=0;
-
-      var y  = window.pageYOffset;
-      $(document).on('scroll',function(){
-          y  = window.pageYOffset;
-          if(y > x){
-            if(j < i-1){j = j+1;}
-            b = a.eq(j); 
-            $('html, body').animate({scrollTop: b.offset().top},1000)
-          }
-          else{
-            if (j >0){j = j-1;}
-            b = a.eq(j);
-            $('html, body').animate({scrollTop: b.offset().top},1000)
-          }
-          x = y;
-        
-        
-      });
-    });
   </script>-->
-</head>
+  <script type="text/javascript" src="scripts/loadAnimation.js"></script>
 
+
+
+</head>
 <body id="page-top">
+
+  
   <!-- Navigation -->
-  <div class="logo">
-    <i class="fa fa-plane" aria-hidden="true"><span>Travel</span></i>
-  </div>
-  <a class="menu-toggle rounded" href="#">
-    <i class="fa fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="smooth-scroll" href="#Header"></a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#About">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Testimonials">Testimonials</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="smooth-scroll" href="#Contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+
+
+  <nav class="navbar navbar-expand-md fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img id="navLogo" src="images/Adsız.png" class="navLogo d-none d-sm-block"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#Banner" class="nav-link text-uppercase font-weight-bold">Anasayfa <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link text-uppercase font-weight-bold">Hakkımızda</a></li>
+                    <li class="nav-item"><a href="#Services" class="nav-link text-uppercase font-weight-bold">Bölgeler</a></li>
+                    <li class="nav-item"><a href="#Portfolio" class="nav-link text-uppercase font-weight-bold">Galeri</a></li>
+                    <li class="nav-item"><a href="#Testimonials" class="nav-link text-uppercase font-weight-bold">Araçlarımız</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link text-uppercase font-weight-bold">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   <!-- Header Starts -->
-  <section id="Banner" class="content-section" style="background: url('images/mainBG.jpg') rgba(0,0,0,0.5) no-repeat fixed center; background-size: cover; background-blend-mode: multiply;">
+  <section id="Banner" class="content-section" style="background: url('images/mainBG.webp') rgba(0,0,0,0.5) no-repeat fixed center; background-size: cover; background-blend-mode: multiply;">
     <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner">
       <div class="overlay"></div>
       <div class="gtco-container">
@@ -104,7 +70,7 @@
 
             <div class="row">
               <div class="col-md-7 animated animatedFadeInRight fadeInRight">
-                <h1 align="center" class="sec1">SEYAHATİNİZ BİZİMLE DAHA KOLAY VE DAHA HIZLI!</h1> 
+                <h1 align="center" class="sec1">SEYAHATİNİZ BİZİMLE DAHA KOLAY VE DAHA GÜVENİLİR!</h1> 
               </div>
               <div class="col-md-4 animated animatedFadeInUp fadeInUp">
                 <div class="form-wrap">
@@ -113,46 +79,160 @@
                     <div class="tab-content">
                       <div class="tab-content-inner active" data-content="signup">
                         <h3>Rezervasyon</h3>
-                        <form action="#">
+                        <form id="my-formR" action="https://formspree.io/mknqdvwn" method="post">
                           <div class="row form-group">
                             <div class="col-md-12">
-                              <label for="fullname">Your Name</label>
-                              <input type="text" id="fullname" class="form-control">
+                              <label for="fullname">İsim</label>
+                              <input type="text" id="fullname" class="form-control" name="İsim" required>
                             </div>
                           </div>
                           <div class="row form-group">
                             <div class="col-md-12">
-                              <label for="activities">Activities</label>
-                              <select name="#" id="activities" class="form-control">
-                                <option value="">Activities</option>
-                                <option value="">Hiking</option>
-                                <option value="">Caving</option>
-                                <option value="">Swimming</option>
+                              <label for="Soyisim">Soyisim</label>
+                              <input type="text" id="Soyisim" class="form-control" name="Soyisim" required>
+                            </div>
+                          </div>
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="destination">Kalkış Noktası</label>
+                              <select name="KalkışNoktası" id="destination" class="form-control" required>
+                                <option value="">Lütfen kalkış noktası seçiniz...</option>
+                                <optgroup label="Muğla">
+                                  <option value="Muğla">Merkez</option>
+                                  <option value='Bodrum'>Bodrum</option>
+                                  <option value='Datça'>Datça</option>
+                                  <option value='Kavaklıdere'>Kavaklıdere</option>
+                                  <option value='Marmaris'>Marmaris</option>
+                                  <option value='Menteşe'>Menteşe</option>
+                                  <option value='Seydikemer'>Seydikemer</option>
+                                  <option value='Yatağan'>Yatağan</option>
+                                </optgroup>
+                                <optgroup label="İzmir">
+                                  <option value='İzmir'>Merkez</option>
+                                  <option value='Aliağa'>Aliağa</option>
+                                  <option value='Bayındır'>Bayındır</option>
+                                  <option value='Bergama'>Bergama</option>
+                                  <option value='Bornova'>Bornova</option>
+                                  <option value='Çeşme'>Çeşme</option>
+                                  <option value='Dikili'>Dikili</option>
+                                  <option value='Gaziemir'>Gaziemir</option>
+                                  <option value='Karabağlar'>Karabağlar</option>
+                                  <option value='Karşıyaka'>Karşıyaka</option>
+                                  <option value='Kınık'>Kınık</option>
+                                  <option value='Konak'>Konak</option>
+                                  <option value='Menemen'>Menemen</option>
+                                  <option value='Ödemiş'>Ödemiş</option>
+                                  <option value='Selçuk'>Selçuk</option>
+                                  <option value='Torbalı'>Torbalı</option>
+                                </optgroup>
+                                <optgroup label="Aydın">
+                                  <option value='Aydın'>Merkez</option>
+                                  <option value='Buharkent'>Buharkent</option>
+                                  <option value='Didim'>Didim</option>
+                                  <option value='Germencik'>Germencik</option>
+                                  <option value='Karacasu'>Karacasu</option>
+                                  <option value='Koçarlı'>Koçarlı</option>
+                                  <option value='Kuşadası'>Kuşadası</option>
+                                  <option value='Nazilli'>Nazilli</option>
+                                  <option value='Sultanhisar'>Sultanhisar</option>
+                                </optgroup>
+                                <optgroup label="Denizli">
+                                  <option value='Denizli'>Merkez</option>
+                                  <option value='Babadağ'>Babadağ</option>
+                                  <option value='Bekilli'>Bekilli</option>
+                                  <option value='Bozkurt'>Bozkurt</option>
+                                  <option value='Çal'>Çal</option>
+                                  <option value='Çardak'>Çardak</option>
+                                  <option value='Güney'>Güney</option>
+                                  <option value='Kale'>Kale</option>
+                                  <option value='Pamukkale'>Pamukkale</option>
+                                  <option value='Serinhisar'>Serinhisar</option>
+                                </optgroup>
+                                <optgroup label="Ankara">
+                                  <option value='Ankara'>Ankara</option>
+                                </optgroup>
                               </select>
                             </div>
                           </div>
                           <div class="row form-group">
                             <div class="col-md-12">
-                              <label for="destination">Destination</label>
-                              <select name="#" id="destination" class="form-control">
-                                <option value="">Philippines</option>
-                                <option value="">USA</option>
-                                <option value="">Australia</option>
-                                <option value="">Singapore</option>
+                              <label for="destination">Varış Noktası</label>
+                              <select name="VarışNoktası" id="destination1" class="form-control" required>
+                                <option value="">Lütfen varış noktası seçiniz...</option>
+                                <optgroup label="Muğla">
+                                  <option value="Muğla">Merkez</option>
+                                  <option value='Bodrum'>Bodrum</option>
+                                  <option value='Datça'>Datça</option>
+                                  <option value='Kavaklıdere'>Kavaklıdere</option>
+                                  <option value='Marmaris'>Marmaris</option>
+                                  <option value='Menteşe'>Menteşe</option>
+                                  <option value='Seydikemer'>Seydikemer</option>
+                                  <option value='Yatağan'>Yatağan</option>
+                                </optgroup>
+                                <optgroup label="İzmir">
+                                  <option value='İzmir'>Merkez</option>
+                                  <option value='Aliağa'>Aliağa</option>
+                                  <option value='Bayındır'>Bayındır</option>
+                                  <option value='Bergama'>Bergama</option>
+                                  <option value='Bornova'>Bornova</option>
+                                  <option value='Çeşme'>Çeşme</option>
+                                  <option value='Dikili'>Dikili</option>
+                                  <option value='Gaziemir'>Gaziemir</option>
+                                  <option value='Karabağlar'>Karabağlar</option>
+                                  <option value='Karşıyaka'>Karşıyaka</option>
+                                  <option value='Kınık'>Kınık</option>
+                                  <option value='Konak'>Konak</option>
+                                  <option value='Menemen'>Menemen</option>
+                                  <option value='Ödemiş'>Ödemiş</option>
+                                  <option value='Selçuk'>Selçuk</option>
+                                  <option value='Torbalı'>Torbalı</option>
+                                </optgroup>
+                                <optgroup label="Aydın">
+                                  <option value='Aydın'>Merkez</option>
+                                  <option value='Buharkent'>Buharkent</option>
+                                  <option value='Didim'>Didim</option>
+                                  <option value='Germencik'>Germencik</option>
+                                  <option value='Karacasu'>Karacasu</option>
+                                  <option value='Koçarlı'>Koçarlı</option>
+                                  <option value='Kuşadası'>Kuşadası</option>
+                                  <option value='Nazilli'>Nazilli</option>
+                                  <option value='Sultanhisar'>Sultanhisar</option>
+                                </optgroup>
+                                <optgroup label="Denizli">
+                                  <option value='Denizli'>Merkez</option>
+                                  <option value='Babadağ'>Babadağ</option>
+                                  <option value='Bekilli'>Bekilli</option>
+                                  <option value='Bozkurt'>Bozkurt</option>
+                                  <option value='Çal'>Çal</option>
+                                  <option value='Çardak'>Çardak</option>
+                                  <option value='Güney'>Güney</option>
+                                  <option value='Kale'>Kale</option>
+                                  <option value='Pamukkale'>Pamukkale</option>
+                                  <option value='Serinhisar'>Serinhisar</option>
+                                </optgroup>
+                                <optgroup label="Ankara">
+                                  <option value='Ankara'>Ankara</option>
+                                </optgroup>
                               </select>
                             </div>
                           </div>
                           
                           <div class="row form-group">
                             <div class="col-md-12">
-                              <label for="date-start">Date Travel</label>
-                              <input type="text" id="date-start" class="form-control">
+                              <label for="date-start">Tarih</label>
+                              <input type="date" id="date-start" class="form-control" name="Tarih" required>
+                            </div>
+                          </div>
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                              <label for="date-start">Saat</label>
+                              <input type="time" id="date-start1" class="form-control" name="Saat" min="00:00" max="23:59" required>
                             </div>
                           </div>
 
                           <div class="row form-group">
                             <div class="col-md-12">
-                              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                              <button type="submit" id="my-form-buttonR"class="btn btn-primary btn-block">Rezervasyon</button>
                             </div>
                           </div>
                         </form> 
@@ -163,6 +243,9 @@
                   </div>
                 </div>
               </div>
+
+              
+
             </div>
                 
             
@@ -173,6 +256,9 @@
   </section>
   <!-- Header Ends -->
   <!-- About Us Starts -->
+
+  <div id="my-form-statusR" align="center"></div>
+
   <section id="About" class="content-section">
     <div class="container text-center">
       <div class="row">
@@ -281,10 +367,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
       <div class="portfolio-wrapper clearfix">
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-two.jpeg">
+            <img class="content-image" src="images/p-two.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -292,10 +378,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-two.jpeg">
+            <img class="content-image" src="images/p-two.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -303,10 +389,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-two.jpeg">
+            <img class="content-image" src="images/p-two.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -314,10 +400,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-three.jpeg">
+            <img class="content-image" src="images/p-three.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -325,10 +411,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-four.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-four.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-four.jpeg">
+            <img class="content-image" src="images/p-four.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -336,10 +422,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-five.jpeg">
+            <img class="content-image" src="images/p-five.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -347,10 +433,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-six.jpeg">
+            <img class="content-image" src="images/p-six.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -358,10 +444,10 @@
             </div>
           </div>
         </a>
-        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">
+        <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.webp">
           <div class="content hover-cont-wrap">
             <div class="content-overlay"></div>
-            <img class="content-image" src="images/p-three.jpeg">
+            <img class="content-image" src="images/p-three.webp">
             <div class="content-details fadeIn-bottom">
               <h5 class="p-title">Title</h5>
               <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -384,49 +470,49 @@
           <div id="customers-testimonials" class="owl-carousel">
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
               </div>
               <div class="testimonial-name">Araç 1</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
               </div>
               <div class="testimonial-name">Araç 2</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
               </div>
               <div class="testimonial-name">Araç 3</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
               </div>
               <div class="testimonial-name">Araç 4</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
               </div>
               <div class="testimonial-name">Araç 5</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
               </div>
               <div class="testimonial-name">Araç 6</div>
             </div>
             <div class="item">
               <div class="shadow-effect">
-                <img class="img-circle" src="images/araba.jpg" alt="">
+                <img class="img-circle" src="images/araba.webp" alt="">
                 <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
               </div>
               <div class="testimonial-name">Araç 7</div>
@@ -441,7 +527,7 @@
     <div class="container">
       <div class="block-heading">
         <h2>İletişim</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Aklınızdaki tüm sorular için bizimle iletişime geçin!.</p>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -476,23 +562,23 @@
           <div class="form-wrap">
             <form id="my-form" action="https://formspree.io/mdolqjvb" method="post">
               <div class="fname floating-label">
-                <input type="text" class="floating-input" name="İsim" />
+                <input type="text" class="floating-input" name="İsim" required />
                 <label for="title">İsim</label>
               </div>
               <div class="fname floating-label">
-                <input type="text" class="floating-input" name="Soyisim" />
+                <input type="text" class="floating-input" name="Soyisim" required />
                 <label for="title">Soyisim</label>
               </div>
               <div class="email floating-label">
-                <input type="email" class="floating-input" name="Email" />
+                <input type="email" class="floating-input" name="Email" required />
                 <label for="email">Email</label>
               </div>
               <div class="contact floating-label">
-                <input type="tel" class="floating-input" name="Cep Telefonu" />
+                <input type="tel" class="floating-input" name="Cep Telefonu" required />
                 <label for="email">GSM</label>
               </div>
               <div class="company floating-label">
-                <input type="text" class="floating-input" name="İleti" />
+                <input type="text" class="floating-input" name="İleti" required />
                 <label for="email">İleti</label>
               </div>
               <div class="submit-btn">
@@ -509,92 +595,26 @@
     <div class="container">
       <ul class="list-inline">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/Ahmetyavuz4435" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/ahmt__yavz/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="javascript:void(0)">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a title="Whatsapp Web üzerinden mesaj göndermek için tıklayınız!" class="social-link rounded-circle text-white" href="https://api.whatsapp.com/send?phone=905324510313&text=Merhaba! Rezervasyon yapmak istiyorum. Dönüş yapar mısınız?" target="_blank">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
-      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk">Position2</p>
+      <p class="text-muted small mb-0">&copy; Copyright 2022 transferselimiye.com</p>
+      <p class="text-muted small mb-0">Designed by <a  href="https://aykutceng.github.io/" target="_blank">Aykut Cengiz</p>
     </div>
   </footer>
-  <script>
-      
-
-
-    window.addEventListener("DOMContentLoaded", function() {
-
-      // get the form elements defined in your form HTML above
-      
-      var form = document.getElementById("my-form");
-      var button = document.getElementById("my-form-button");
-      var status = document.getElementById("my-form-status");
-      var closer = document.getElementById("close");
-      var htmlS = "Mailiniz Başarı ile Gönderildi!<span id='close'>&times</span>";
-      var htmlF = "Bir Hata Oluştu!<span id='close'>&times</span>";
-
-      // Success and Error functions for after the form is submitted
-      
-      function success() {
-        form.reset();
-        button.style.display = "none";
-        status.style.display = "block" ;
-        status.innerHTML = htmlS;
-      }
-
-      function error() {
-        status.style.display = "block";
-        status.innerHTML = htmlF;
-      }
-
-
-      // handle the form submission event
-
-      form.addEventListener("submit", function(ev) {
-        ev.preventDefault();
-        var data = new FormData(form);
-        ajax(form.method, form.action, data, success, error);
-      });
-
-      status.addEventListener("click", function(ev) {
-        ev.preventDefault();
-        status.style.display = "";
-      });
-
-
-
-    });
-    
-    // helper function for sending an AJAX request
-
-    function ajax(method, url, data, success, error) {
-      var xhr = new XMLHttpRequest();
-      xhr.open(method, url);
-      xhr.setRequestHeader("Accept", "application/json");
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
-          success(xhr.response, xhr.responseType);
-        } else {
-          error(xhr.status, xhr.response, xhr.responseType);
-        }
-      };
-      xhr.send(data);
-    }
-
-
-
-  </script>
+  <script src="scripts/formspree.js"></script>
 </body>
 
 </html>
