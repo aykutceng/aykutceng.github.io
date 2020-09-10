@@ -638,4 +638,34 @@ li.nav-item{
 }
 
 
+.animated {
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp, .animatedFadeInRight {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
+.fadeInRight {
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+}
+
+
+
 /*<a title="Whatsapp Web üzerinden mesaj göndermek için tıklayınız!" href="https://api.whatsapp.com/send?phone=905428105937&amp;text=Rezervasyon yapmak istiyorum. Lütfen benimle iletişime geçiniz!" target="_blank"><i class="fa fa-whatsapp"></i><b style="font-variant: small-caps;">Tel:</b> +90 183 946 7 293 </a>*/
