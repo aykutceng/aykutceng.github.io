@@ -400,7 +400,7 @@ span {
 .owl-prev {
 	width: 30px;
 	height: 30px;
-	background: url("../images/left-chevron.png") no-repeat 0 0 / cover !important;
+	background: url("../images/left-chevron.webp") no-repeat 0 0 / cover !important;
 	float: left;
 	position: absolute;
 	top: 35%;
@@ -409,7 +409,7 @@ span {
 .owl-next {
 	width: 30px;
 	height: 30px;
-	background: url("../images/right-chevron.png") no-repeat 0 0 / cover !important;
+	background: url("../images/right-chevron.webp") no-repeat 0 0 / cover !important;
 	float: right;
 	position: absolute;
 	top: 35%;
