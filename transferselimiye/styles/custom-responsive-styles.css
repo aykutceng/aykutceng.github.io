@@ -7,10 +7,10 @@
   .logo i {
     font-size: 40px;
   }
-  #Banner .content-wrap h1 {
+  #anasayfa .content-wrap h1 {
     font-size: 36px;
   }
-  #Banner .content-wrap h3 {
+  #anasayfa .content-wrap h3 {
     font-size: 20px;
   }
   .btn-xl {
@@ -19,7 +19,7 @@
   .content-section-heading h2 {
     font-size: 30px;
   }
-  #Portfolio .portfolio-wrapper .each-portfolio {
+  #galeri .portfolio-wrapper .each-portfolio {
     float: none;
     margin: 0 auto 20px;
     width: 100%;
@@ -59,10 +59,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  #Banner .content-wrap h1 {
+  #anasayfa .content-wrap h1 {
     font-size: 36px;
   }
-  #Banner .content-wrap h3 {
+  #anasayfa .content-wrap h3 {
     font-size: 20px;
   }
   .btn-xl {
@@ -71,7 +71,7 @@
   .content-section-heading h2 {
     font-size: 30px;
   }
-  #Portfolio .portfolio-wrapper .each-portfolio {
+  #galeri .portfolio-wrapper .each-portfolio {
     float: none;
     margin: 0 auto 20px;
     width: 100%;
@@ -108,10 +108,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  #Banner .content-wrap h1 {
+  #anasayfa .content-wrap h1 {
     font-size: 40px;
   }
-  #Banner .content-wrap h3 {
+  #anasayfa .content-wrap h3 {
     font-size: 24px;
   }
   .btn-xl {
@@ -141,10 +141,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  #Banner .content-wrap h1 {
+  #anasayfa .content-wrap h1 {
     font-size: 40px;
   }
-  #Banner .content-wrap h3 {
+  #anasayfa .content-wrap h3 {
     font-size: 24px;
   }
   .btn-xl {

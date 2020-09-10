@@ -88,17 +88,6 @@ h1.sec1{
   margin-bottom: 40px;
   text-align: center;
 }
-/* Side Menu */
-.logo {
-	position: absolute;
-	z-index: 99;
-	left: 50px;
-	top: 20px;
-}
-.logo i {
-	font-size: 50px;
-	color: #fff;
-}
 span {
 	color: #fff;
 	vertical-align: middle;
@@ -107,60 +96,64 @@ span {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: capitalize;
 }
-#Banner {
-  position: relative;
-  height: 100vh;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
+
+#anasayfa {
+	background: url('../images/mainBG.webp') rgba(0,0,0,0.5) no-repeat fixed center; 
+	background-size: cover; 
+	background-blend-mode: multiply;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+
 }
-#Banner .content-wrap {
+#anasayfa .content-wrap {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   left: 50%;
 }
-#Banner .content-wrap h1 {
+#anasayfa .content-wrap h1 {
   font-size: 80px;
   margin: 0 0 30px;
   padding: 0;
 }
-#Banner .content-wrap h3 {
+#anasayfa .content-wrap h3 {
   font-size: 24px;
   margin: 0 0 30px;
   padding: 0;
 }
-#Banner .btn-primary {
+#anasayfa .btn-primary {
   background-color: #02ccba;
   color: #fff;
   border: none;
 }
-#Banner .btn-primary:hover {
+#anasayfa .btn-primary:hover {
 	background-color: #07bcab;
 }
 
-#About {
+#hakkimizda {
 	background-color: #f1f1f1;
 }
 
-#Services {
+#bolgeler {
   background-color: #fafafa;
 }
-#Services .service-box {
+#bolgeler .service-box {
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
   perspective: 1000px;
   -webkit-perspective: 1000px;
 }
-#Services .service-icon {
+#bolgeler .service-icon {
   width: 100%;
   height: 220px;
   padding: 20px;
   text-align: center;
   transition: all .5s ease;
 }
-#Services .service-content {
+#bolgeler .service-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -180,7 +173,7 @@ span {
   -o-transform: translateY(110px) rotateX(-90deg);
   transform: translateY(110px) rotateX(-90deg);
 }
-#Services .service-box .service-icon .front-content {
+#bolgeler .service-box .service-icon .front-content {
   position: relative;
   top: 80px;
   -webkit-transform: translateY(-50%);
@@ -189,44 +182,44 @@ span {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-#Services .service-box .service-icon .front-content i {
+#bolgeler .service-box .service-icon .front-content i {
   font-size: 28px;
   color: #fff;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#Services .service-box .service-icon .front-content h3 {
+#bolgeler .service-box .service-icon .front-content h3 {
   font-size: 15px;
   color: #fff;
   text-align: center;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-#Services .service-box .service-content h3 {
+#bolgeler .service-box .service-content h3 {
   font-size: 15px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-#Services .service-box .service-content p {
+#bolgeler .service-box .service-content p {
   font-size: 13px;
   color: #fff;
   margin: 0;
 }
-#Services .service-box .yellow {
+#bolgeler .service-box .yellow {
   background-color: #02b3e4;
 }
-#Services .service-box .orange {
+#bolgeler .service-box .orange {
   background-color: #02ccba;
 }
-#Services .service-box .red {
+#bolgeler .service-box .red {
   background-color: #02BED2;
 }
-#Services .service-box .grey {
+#bolgeler .service-box .grey {
   background-color: #47c6d0;
 }
-#Services .service-box:hover .service-icon {
+#bolgeler .service-box:hover .service-icon {
   opacity: 0;
   -webkit-transform: translateY(-110px) rotateX(90deg);
   -moz-transform: translateY(-110px) rotateX(90deg);
@@ -234,7 +227,7 @@ span {
   -o-transform: translateY(-110px) rotateX(90deg);
   transform: translateY(-110px) rotateX(90deg);
 }
-#Services .service-box:hover .service-content {
+#bolgeler .service-box:hover .service-content {
   opacity: 1;
   -webkit-transform: rotateX(0);
   -moz-transform: rotateX(0);
@@ -242,11 +235,11 @@ span {
   -o-transform: rotateX(0);
   transform: rotateX(0);
 }
-#Portfolio {
+#galeri {
   padding: 80px 0;
   background-color: #f1f1f1;
 }
-#Portfolio .each-portfolio {
+#galeri .each-portfolio {
   position: relative;
   width: calc(33.3% - 10px);
   float: left;
@@ -254,35 +247,35 @@ span {
   text-decoration: none;
   outline: 0 none;
 }
-#Portfolio .each-portfolio img {
+#galeri .each-portfolio img {
   width: 100%;
   height: auto;
 }
-#Portfolio .each-portfolio span.zoom {
+#galeri .each-portfolio span.zoom {
   margin-top: 30px;
 }
-#Portfolio .each-portfolio .fa-search-plus {
+#galeri .each-portfolio .fa-search-plus {
   font-size: 26px;
   color: #fff;
 }
-#Portfolio .each-portfolio .p-title {
+#galeri .each-portfolio .p-title {
   font-size: 22px;
   color: #fff;
   transition: top 0.3s ease-in-out;
 }
-#Portfolio .each-portfolio .p-desc {
+#galeri .each-portfolio .p-desc {
   color: #fff;
   transition: top 0.3s ease-in-out;
   margin: 0 0 20px;
 }
-#Portfolio .content {
+#galeri .content {
   position: relative;
   width: 90%;
   max-width: 400px;
   margin: auto;
   overflow: hidden;
 }
-#Portfolio .content .content-overlay {
+#galeri .content .content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 99%;
@@ -296,13 +289,13 @@ span {
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-#Portfolio .content:hover .content-overlay {
+#galeri .content:hover .content-overlay {
   opacity: 1;
 }
-#Portfolio .content-image {
+#galeri .content-image {
   width: 100%;
 }
-#Portfolio .content-details {
+#galeri .content-details {
   position: absolute;
   text-align: center;
   padding-left: 1em;
@@ -318,12 +311,12 @@ span {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-#Portfolio .content:hover .content-details {
+#galeri .content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
-#Portfolio .fadeIn-bottom {
+#galeri .fadeIn-bottom {
   top: 80%;
 }
 #customers-testimonials .shadow-effect {
@@ -334,7 +327,7 @@ span {
   border: 1px solid #ECECEC;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
 }
-#Testimonials.content-section {
+#araclarimiz.content-section {
   padding-bottom: 0;
   background-color: #fafafa;
 }
@@ -420,55 +413,55 @@ span {
 	outline: 0;
 	border: 0;
 }
-#Contact .block-heading {
+#iletisim .block-heading {
   text-align: center;
   margin-bottom: 40px;
 }
-#Contact .contact-wrapper {
+#iletisim .contact-wrapper {
   border-right: 1px solid #cecece;
   margin-right: 40px;
   padding: 0 40px 40px 0;
 }
-#Contact .contact-wrapper h3 {
+#iletisim .contact-wrapper h3 {
   font-size: 22px;
   font-weight: 600;
   margin: 0 0 20px;
 }
-#Contact .contact-wrapper span {
+#iletisim .contact-wrapper span {
   color: #999999;
   font-size: 16px;
   line-height: 180%;
 }
-#Contact .address-block.border-bottom {
+#iletisim .address-block.border-bottom {
   border-bottom: 1px solid #cecece;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
-#Contact .c-icon {
+#iletisim .c-icon {
   margin-right: 20px;
 }
-#Contact .contact-wrapper span i {
+#iletisim .contact-wrapper span i {
   color: #02ccba;
 }
-#Contact .form-wrap {
+#iletisim .form-wrap {
   width: 100%;
   display: table-cell;
 }
-#Contact .form-wrap .floating-label {
+#iletisim .form-wrap .floating-label {
   position: relative;
   width: 100%;
   display: inline-block;
   margin-bottom: 30px;
 }
-#Contact .form-wrap .fname, #Contact .form-wrap .contact {
+#iletisim .form-wrap .fname, #iletisim .form-wrap .contact {
   margin-right: 20px;
 }
-#Contact .form-wrap .user-msg {
+#iletisim .form-wrap .user-msg {
   width: 98%;
   display: block;
   margin-bottom: 40px;
 }
-#Contact .floating-input {
+#iletisim .floating-input {
   width: 100%;
   border: 0;
   border-bottom: 1px solid #999999;
@@ -476,10 +469,10 @@ span {
   background-color: transparent;
   padding-top: 3px;
 }
-#Contact .floating-input:focus {
+#iletisim .floating-input:focus {
   outline: 0;
 }
-#Contact label {
+#iletisim label {
   position: absolute;
   top: 0px;
   left: 0;
@@ -488,16 +481,16 @@ span {
   color: #999999;
   transition: top 0.2s ease-in-out;
 }
-#Contact .floating-input:focus~label, #Contact .floating-input.not-empty~label {
+#iletisim .floating-input:focus~label, #iletisim .floating-input.not-empty~label {
   top: -18px;
   font-size: 12px;
   color: #02ccba;
   transition: top 0.2s ease-in-out;
 }
-#Contact .submit-btn {
+#iletisim .submit-btn {
   text-align: center;
 }
-#Contact .submit-btn button {
+#iletisim .submit-btn button {
   font-size: 16px;
   color: #fff;
   background-color: #02ccba;
@@ -506,7 +499,7 @@ span {
   cursor: pointer;
   border-radius: 6px;
 }
-#Contact .submit-btn button:hover {
+#iletisim .submit-btn button:hover {
 	background-color: #07bcab;
 }
 footer.footer {
@@ -523,9 +516,12 @@ footer.footer .social-link {
   color: #fff;
   border: none;
   padding: 10px;
+  transition-duration: .15s;
 }
 footer.footer .social-link:hover {
 	background-color: #07bcab;
+	transform: scale(.95);
+	transition-duration: .15s;
 }
 footer.footer p.small a {
 	color: #636c72;
@@ -535,7 +531,7 @@ footer.footer p.small a:hover, footer.footer p.small a.focus {
 	color: #02ccba;
 	text-decoration: none;
 }
-#Contact .address-block span {
+#iletisim .address-block span {
 	text-transform: none;
 }
 /* Styles Begins */
@@ -580,29 +576,6 @@ footer.footer p.small a:hover, footer.footer p.small a.focus {
 #close:hover, #closeR:hover{
 	cursor: pointer;
 }
-
-body {
-	opacity: 0;
-	display: block;
-
-}	
-
-section {margin-left:-100px;}
-
-#loadMain{
-  height: 100vh;
-  width: 100%;
-  background-color: #2b2929;
-}
-#loadico{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url("../images/loadingico_spinnerGrey.gif") no-repeat center center #2b2929
-}
-
-
 .navbar {
     transition: all 0.4s;
 }
@@ -664,17 +637,5 @@ li.nav-item{
     }
 }
 
-footer.footer .social-link{
-	transform: rotateY(360deg);
-	opacity: 0.8;
-	transition-duration: 1.5s;
-}
-
-
-footer.footer .social-link:hover{
-	transform: rotateY(0deg);
-	opacity: 1;
-	transition-duration: 1.5s;
-}
 
 /*<a title="Whatsapp Web üzerinden mesaj göndermek için tıklayınız!" href="https://api.whatsapp.com/send?phone=905428105937&amp;text=Rezervasyon yapmak istiyorum. Lütfen benimle iletişime geçiniz!" target="_blank"><i class="fa fa-whatsapp"></i><b style="font-variant: small-caps;">Tel:</b> +90 183 946 7 293 </a>*/

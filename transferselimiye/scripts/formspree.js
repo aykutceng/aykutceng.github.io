@@ -1,3 +1,19 @@
+   $(window).on('load',function(){
+
+
+      $(".nav-link.text-uppercase.font-weight-bold").click(function(){
+          $('html,body').stop();
+          var scrl = $(this).attr("href");
+          $('html,body').animate({scrollTop: $(scrl).offset().top},1000);})
+        
+              
+    })
+
+
+
+
+
+
 
     $(function () {
       $(window).on('scroll', function () {
