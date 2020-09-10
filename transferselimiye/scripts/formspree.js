@@ -5,12 +5,7 @@
           $('html,body').stop();
           var scrl = $(this).attr("href");
           $('html,body').animate({scrollTop: $(scrl).offset().top},1000);})
-        
-      var link = $('<link>');
-      link.attr("rel", "stylesheet");
-      link.attr("type", "text/css");
-      link.attr("href", "styles/animate.css");
-      $("head").append(link);
+      
 
     })
 
