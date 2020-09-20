@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="rezColor.js"></script>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Mobilya Tasarım</h1>
+  <p>Bölmeye tıklayıp renk seçimi yapınız!</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column1">
+    <div class="res"><img src="bd.png" style="width:100%"></div>
+  </div>
+  <div class="column2">
+    <div class="res"><img src="üd.png" style="width:100%"></div>
+    <div class="res"><img src="ad.png" style="width:100%"></div>
+  </div>
+</div>
+
+
+<div id="rezColorBack" class="rezColorBack">
+  
+<div  id="rezColor" class="rezColor">
+
+  <ul>
+    <li><input type="radio" id="red" name="rezColor" value="#cc4596"><div class="kutuColor" style="background-color:#EF5350;"></div> : Desen1</li>
+    <li><input type="radio" id="red" name="rezColor" value="#c87321"><div class="kutuColor" style="background-color:#EF5350;"></div> : Desen2</li>
+    <li><input type="radio" id="blue" name="rezColor" value="#42A5F5"><div class="kutuColor" style="background-color:#42A5F5;"></div> : Renk1</li>
+    <li><input type="radio" id="grey" name="rezColor" value="#d1d1d1"><div class="kutuColor" style="background-color:#d1d1d1;"></div> : Renk2</li>
+    <button id="degistir" class="rezColorBut">Değiştir</button><button class="rezColorBut" id="iptal">İptal</button>
+  </ul>
+</div>
+
+</div>
+
+<button id="send" class="send" style="position: relative; left: 50vw; transform: translate(-50%,0); background-color: #ab4539; color: white; margin: 0 0 2vh 0; padding: 1vh; ">Bilgileri Göster</button>
+
+</body>
+</html>
