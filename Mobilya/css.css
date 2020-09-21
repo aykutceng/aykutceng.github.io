@@ -12,14 +12,65 @@ body {
   padding: 32px;
 }
 
-.row {
+@media (max-width: 767.998px){
+	.row{display: none;
+  width: 100%;
+  padding: 0 4px;  
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+	}
+	.rowShow {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0 4px;
+  width: 100vw;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+
 }
+}
+
+@media(min-width: 768px){
+
+.row {
+  display: none;
+  width: 100vw;
+  margin: 0;
+  padding: 0 10vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+}
+
+.rowShow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 0;
+  padding: 0 10vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+
+}
+
+}
+
+
 
 /* Create four equal columns that sits next to each other */
 .column1 {
@@ -54,7 +105,7 @@ body {
 			background-color: rgba(0,0,0,0.7);
 			width: 100%;
 			height: 100vh;
-			position: absolute;
+			position: fixed;
 			left: 0;
 			top: 0;
 			z-index: 10000000000;
